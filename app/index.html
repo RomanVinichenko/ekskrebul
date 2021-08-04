@@ -1,17 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ekskrebul</title>
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-</head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <nav class="menu">
+                    <a class="logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" alt="Логотип" />
+                    </a>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Забронировать</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">О Нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Стоимость</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <button class="menu__button" type="button">Обратный Звонок</button>
+                </nav>
+            </div>
+        </header>
 
-<body>
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
-    <script src='js/index.min.js'></script>
-</body>
-
+        <main class="main">
+            <section class="top">
+                <div class="container">
+                    <div class="top__inner">
+                        <div class="top__description">
+                            <p class="top__pretitile">База отдыха на Aзовском море!</p>
+                            <h1 class="top__title">Ekskrebul</h1>
+                            <p class="top__subtitle">
+                                Семейный отдых в пансионате на берегу Азовского моря, аренда номеров
+                                и домиков в пансионате с 3х разовым питанием.
+                            </p>
+                        </div>
+                        <div class="top__slider">
+                            <img class="top__img" src="images/1.png" alt="фото базы" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="present">
+                <div class="container">
+                    <div class="book">
+                        <div class="book__item">
+                            <p class="book__title">Гости</p>
+                            <select class="book__person">
+                                <option value="2 человека">2 человека</option>
+                                <option value="3 человека" selected>3 человека</option>
+                                <option value="4 человека">4 человека</option>
+                                <option value="5 человек">5 человек</option>
+                                <option value="6 человек">6 человек</option>
+                                <option value="7 человек">7 человек</option>
+                                <option value="8 человек">8 человек</option>
+                                <option value="9 человек">9 человек</option>
+                                <option value="10 человек">10 человек</option>
+                            </select>
+                        </div>
+                        <div class="book__item book__item--calendar">
+                            <p class="book__title">Дата заезда</p>
+                            <input class="book__date" value="2021-01-01" type="date" />
+                        </div>
+                        <div class="book__item book__item--calendar">
+                            <p class="book__title">Дата выезда</p>
+                            <input class="book__date" value="2021-01-01" type="date" />
+                        </div>
+                        <button class="book__button" type="button">Забронировать</button>
+                    </div>
+                    <h2 class="present__title">Посмотрите фото нашей базы</h2>
+                    <img class="present__img" src="images/main.jpg" alt="Фото базы" />
+                </div>
+            </section>
+            <section class="benefits">
+                <div class="container">
+                    <h2 class="benefits__title">
+                        Мы гарантируем хорошее настроение и безопасность
+                    </h2>
+                    <div class="benefits__inner">
+                        <ul class="benefits__list-left">
+                            <li class="benefits__item-left benefits__item-left--house">
+                                Большой выбор номеров и коттеджов
+                            </li>
+                            <li class="benefits__item-left benefits__item-left--lock">
+                                Охраняемая территория
+                            </li>
+                            <li class="benefits__item-left benefits__item-left--parking">
+                                Бесплатная парковка
+                            </li>
+                            <li class="benefits__item-left benefits__item-left--animals">
+                                Можно отдыхать с животными
+                            </li>
+                        </ul>
+                        <img class="benefits__img" src="images/benefits.jpg" alt="Вид на море" />
+                        <ul class="benefits__list-right">
+                            <li class="benefits__item-right benefits__item-right--cake">
+                                Проведение мероприятий
+                            </li>
+                            <li class="benefits__item-right benefits__item-right--sun">
+                                Развлечение для всей семьи
+                            </li>
+                            <li class="benefits__item-right benefits__item-right--insects">
+                                Обработка от комаров
+                            </li>
+                            <li class="benefits__item-right benefits__item-right--jellyfish">
+                                Защитная сетка от медуз
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="rooms">
+                <div class="container">
+                    <h2 class="rooms__title title">Наши номера</h2>
+                    <article class="card">
+                        <img class="card__img" src="images/one-room.jpg" alt="Фото номера" />
+                        <div class="card__content">
+                            <h4 class="card__title">Однокомантный номер люкс/стандарт</h4>
+                            <div class="card__items">
+                                <ul class="card__list-left">
+                                    <li class="card__item">Кондиционер</li>
+                                    <li class="card__item">Холодильник</li>
+                                    <li class="card__item">Телевизор</li>
+                                </ul>
+                                <ul class="card__list-right">
+                                    <li class="card__item">Личный балкон</li>
+                                    <li class="card__item">Санузел с душевой кабинкой</li>
+                                    <li class="card__item">Горячая, холодная вода</li>
+                                </ul>
+                            </div>
+                            <a class="card__button" href="#"> Узнать цену </a>
+                        </div>
+                    </article>
+                    <article class="card card-revert">
+                        <img class="card__img" src="images/one-room.jpg" alt="Фото номера" />
+                        <div class="card__content">
+                            <h4 class="card__title">Однокомантный номер люкс/стандарт</h4>
+                            <div class="card__items">
+                                <ul class="card__list-left">
+                                    <li class="card__item">Кондиционер</li>
+                                    <li class="card__item">Холодильник</li>
+                                    <li class="card__item">Телевизор</li>
+                                </ul>
+                                <ul class="card__list-right">
+                                    <li class="card__item">Личный балкон</li>
+                                    <li class="card__item">Санузел с душевой кабинкой</li>
+                                    <li class="card__item">Горячая, холодная вода</li>
+                                </ul>
+                            </div>
+                            <a class="card__button" href="#"> Узнать цену </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+        <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+        <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
+        <script src="js/index.min.js"></script>
+    </body>
 </html>

@@ -1,0 +1,62 @@
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 150px;
+    padding: 55px;
+    border-radius: 20px;
+    box-shadow: 1px 11px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(180deg, #a3e4ff 0%, #f0ffff 100%);
+
+    &__person {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__date {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 50px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 37px;
+            height: 35px;
+            background-image: url("../images/user.svg");
+        }
+    }
+
+    .book__item--calendar {
+        &::before {
+            background-image: url("../images/calendar.svg");
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    &__button {
+        padding: 14px 30px;
+        width: 262px;
+        border: none;
+        border-radius: 10px;
+        font-weight: 300;
+        font-size: 26px;
+        line-height: 31px;
+        color: $wh;
+        background-color: $accent;
+        cursor: pointer;
+    }
+}
