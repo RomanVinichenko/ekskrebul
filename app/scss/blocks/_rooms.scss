@@ -1,69 +1,94 @@
 .rooms {
-  padding: 250px 0 50px;
+  padding: 250px 0 5px;
   background-image: url("../images/bg.png");
   background-size: cover;
-  background-repeat: no-repeat;
-&__title {
-  font-size: 57px;
-  margin-bottom: 80px;
-}
 
+  &__title::after {
+    right: 308px;
+    top: -47px;
+    width: 150px;
+    height: 120px;
+    background-image: url("../images/icons/crab.svg");
+  }
+
+  &__title-cottages::after {
+    left: 20px;
+    top: -134px;
+    width: 258px;
+    height: 285px;
+    background-image: url("../images/icons/lighthouse.svg");
+  }
 }
 
 .card {
-  overflow: hidden;
   display: flex;
-  background-color: $wh;
+  overflow: hidden;
   border-radius: 15px;
-  margin-bottom: 110px;
+  background-color: $wh;
+  max-width: 1085px;
+  width: 100%;
+  margin: 0 auto 110px;
+
   &__content {
     padding: 25px 20px 25px 50px;
     width: 100%;
   }
 
   &__title {
-    font-weight: 400;
     margin-bottom: 30px;
+    font-weight: 400;
     font-size: 26px;
   }
+
   &__items {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
   }
-  &__list-left {
-    max-width: 230px;
-    width: 100%;
-    list-style: initial;
-    padding-left: 30px;
 
-  }
-  &__list-right {
-    max-width: 350px;
+  &__list-left {
+    padding-left: 30px;
     width: 100%;
+    max-width: 230px;
     list-style: initial;
   }
+
+  &__list-right {
+    width: 100%;
+    max-width: 350px;
+    list-style: initial;
+  }
+
   &__item {
     font-size: 24px;
+  }
+
+  &__item:not(:last-child) {
     margin-bottom: 10px;
   }
+
   &__button {
-    background-color: $accent;
-    font-size: 24px;
+    display: block;
     padding: 12px 80px;
+    width: 293px;
     border-radius: 10px;
+    font-size: 24px;
+    background-color: $accent;
     transition: box-shadow 0.2s;
+
     &:hover {
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     }
   }
-  .card__item::marker{
-    color: #68CAFF;
+
+  .card__item::marker {
+    font-weight: 700;
     font-size: 35px;
     line-height: 0;
-    font-weight: 700;
+    color: #68caff;
   }
 }
+
 .card-revert {
   flex-direction: row-reverse;
 }

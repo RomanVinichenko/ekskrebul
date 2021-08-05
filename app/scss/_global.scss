@@ -1,24 +1,32 @@
-.container {
-    margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1148px;
-}
-
 body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    color: $bl;
-    font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: $bl;
+  background-color: #f0ffff;
+
 }
 
-.main {
-    background-color: #f0ffff;
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1148px;
 }
 
 .title {
-    color: $accent;
-    font-family: "Pacifico", sans-serif;
-    font-weight: 400;
-    text-align: center;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  font-family: "Pacifico", sans-serif;
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 100px;
+  text-align: center;
+  color: $accent;
 
+  &::after {
+    content: "";
+    position: absolute;
+    background-size: cover;
+  }
 }
