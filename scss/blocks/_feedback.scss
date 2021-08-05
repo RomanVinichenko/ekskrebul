@@ -1,0 +1,15 @@
+.feedback {
+  position: relative;
+  padding-top: 250px;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 500px;
+    background-image: url("../images/downbg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

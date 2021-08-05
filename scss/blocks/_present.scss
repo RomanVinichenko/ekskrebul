@@ -1,0 +1,24 @@
+.present {
+  padding-bottom: 100px;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    font-size: 70px;
+    color: $accent;
+
+    &::after {
+      right: 0;
+      top: -90px;
+      width: 162px;
+      height: 180px;
+      background-image: url("../images/icons/star.svg");
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}
