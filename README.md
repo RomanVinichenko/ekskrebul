@@ -1,4 +1,4 @@
-[![wakatime](https://wakatime.com/badge/github/RomanVinichenko/ekskrebul.svg)](https://wakatime.com/badge/github/RomanVinichenko/ekskrebul)
+https://wakatime.com/badge/github/RomanVinichenko/ekskrebul.svg
 # Gulp template
 1. npm i
 2. gulp - for start gulp
