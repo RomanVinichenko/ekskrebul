@@ -22,12 +22,12 @@
 
 .card {
   display: flex;
+  margin: 0 auto 110px;
+  width: 100%;
+  max-width: 1085px;
   overflow: hidden;
   border-radius: 15px;
   background-color: $wh;
-  max-width: 1085px;
-  width: 100%;
-  margin: 0 auto 110px;
 
   &__content {
     padding: 25px 20px 25px 50px;

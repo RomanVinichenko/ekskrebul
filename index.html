@@ -1,297 +1,400 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ekskrebul</title>
-        <link rel="stylesheet" href="css/style.min.css" />
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekskrebul</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <nav class="menu">
-                    <a class="logo" href="#">
-                        <img class="logo__img" src="images/logo.svg" alt="Логотип" />
-                    </a>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Забронировать</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">О Нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Стоимость</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Галерея</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                    <button class="menu__button" type="button">Обратный Звонок</button>
-                </nav>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="menu">
+          <a class="logo" href="#top">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип" />
+          </a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#present">Забронировать</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#benefits">О Нас</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#rooms">Стоимость</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#advantages">Галерея</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#address">Контакты</a>
+            </li>
+          </ul>
+          <a class="menu__button feedback-button" href="#">Обратный Звонок</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="top" id="top">
+        <div class="container">
+          <div class="top__inner">
+            <div class="top__description">
+              <p class="top__pretitile">База отдыха на Aзовском море!</p>
+              <h1 class="top__title">Ekskrebul</h1>
+              <p class="top__subtitle">
+                Семейный отдых в пансионате на берегу Азовского моря, аренда номеров и домиков в
+                пансионате с 3х разовым питанием.
+              </p>
             </div>
-        </header>
-
-        <main class="main">
-            <section class="top">
-                <div class="container">
-                    <div class="top__inner">
-                        <div class="top__description">
-                            <p class="top__pretitile">База отдыха на Aзовском море!</p>
-                            <h1 class="top__title">Ekskrebul</h1>
-                            <p class="top__subtitle">
-                                Семейный отдых в пансионате на берегу Азовского моря, аренда номеров
-                                и домиков в пансионате с 3х разовым питанием.
-                            </p>
-                        </div>
-                        <div class="top__slider">
-                            <img class="top__img" src="images/1.png" alt="фото базы" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="present">
-                <div class="container">
-                    <div class="book">
-                        <div class="book__item">
-                            <p class="book__title">Гости</p>
-                            <select class="book__person">
-                                <option value="2 человека">2 человека</option>
-                                <option value="3 человека" selected>3 человека</option>
-                                <option value="4 человека">4 человека</option>
-                                <option value="5 человек">5 человек</option>
-                                <option value="6 человек">6 человек</option>
-                                <option value="7 человек">7 человек</option>
-                                <option value="8 человек">8 человек</option>
-                                <option value="9 человек">9 человек</option>
-                                <option value="10 человек">10 человек</option>
-                            </select>
-                        </div>
-                        <div class="book__item book__item--calendar">
-                            <p class="book__title">Дата заезда</p>
-                            <input class="book__date" value="2021-01-01" type="date" />
-                        </div>
-                        <div class="book__item book__item--calendar">
-                            <p class="book__title">Дата выезда</p>
-                            <input class="book__date" value="2021-01-01" type="date" />
-                        </div>
-                        <button class="book__button" type="button">Забронировать</button>
-                    </div>
-                    <h2 class="present__title title">Посмотрите фото нашей базы</h2>
-                    <img class="present__img" src="images/main.jpg" alt="Фото базы" />
-                </div>
-            </section>
-            <section class="benefits">
-                <div class="container">
-                    <h2 class="benefits__title title">
-                        Мы гарантируем хорошее настроение и безопасность
-                    </h2>
-                    <div class="benefits__inner">
-                        <ul class="benefits__list-left">
-                            <li class="benefits__item-left benefits__item-left--house">
-                                Большой выбор номеров и коттеджов
-                            </li>
-                            <li class="benefits__item-left benefits__item-left--lock">
-                                Охраняемая территория
-                            </li>
-                            <li class="benefits__item-left benefits__item-left--parking">
-                                Бесплатная парковка
-                            </li>
-                            <li class="benefits__item-left benefits__item-left--animals">
-                                Можно отдыхать с животными
-                            </li>
-                        </ul>
-                        <img class="benefits__img" src="images/benefits.jpg" alt="Вид на море" />
-                        <ul class="benefits__list-right">
-                            <li class="benefits__item-right benefits__item-right--cake">
-                                Проведение мероприятий
-                            </li>
-                            <li class="benefits__item-right benefits__item-right--sun">
-                                Развлечение для всей семьи
-                            </li>
-                            <li class="benefits__item-right benefits__item-right--insects">
-                                Обработка от комаров
-                            </li>
-                            <li class="benefits__item-right benefits__item-right--jellyfish">
-                                Защитная сетка от медуз
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="rooms">
-                <div class="container">
-                    <h2 class="rooms__title title">Наши номера</h2>
-                    <article class="card">
-                        <img class="card__img" src="images/one-room.jpg" alt="Фото номера" />
-                        <div class="card__content">
-                            <h4 class="card__title">Однокомантный номер люкс/стандарт</h4>
-                            <div class="card__items">
-                                <ul class="card__list-left">
-                                    <li class="card__item">Кондиционер</li>
-                                    <li class="card__item">Холодильник</li>
-                                    <li class="card__item">Телевизор</li>
-                                </ul>
-                                <ul class="card__list-right">
-                                    <li class="card__item">Личный балкон</li>
-                                    <li class="card__item">Санузел с душевой кабинкой</li>
-                                    <li class="card__item">Горячая, холодная вода</li>
-                                </ul>
-                            </div>
-                            <a class="card__button" href="#"> Узнать цену </a>
-                        </div>
-                    </article>
-                    <article class="card card-revert">
-                        <img class="card__img" src="images/two-room.jpg" alt="Фото номера" />
-                        <div class="card__content">
-                            <h4 class="card__title">Двухкомнатный номер люкс</h4>
-                            <div class="card__items">
-                                <ul class="card__list-left">
-                                    <li class="card__item">Кондиционер</li>
-                                    <li class="card__item">Холодильник</li>
-                                    <li class="card__item">Телевизор</li>
-                                </ul>
-                                <ul class="card__list-right">
-                                    <li class="card__item">Личный балкон</li>
-                                    <li class="card__item">Санузел с душевой кабинкой</li>
-                                    <li class="card__item">Горячая, холодная вода</li>
-                                </ul>
-                            </div>
-                            <a class="card__button" href="#"> Узнать цену </a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img class="card__img" src="images/three-room.jpg" alt="Фото номера" />
-                        <div class="card__content">
-                            <h4 class="card__title">Трехкомнатный номер люкс</h4>
-                            <div class="card__items">
-                                <ul class="card__list-left">
-                                    <li class="card__item">Кондиционер</li>
-                                    <li class="card__item">Холодильник</li>
-                                    <li class="card__item">Телевизор</li>
-                                </ul>
-                                <ul class="card__list-right">
-                                    <li class="card__item">Личный балкон</li>
-                                    <li class="card__item">Санузел с душевой кабинкой</li>
-                                    <li class="card__item">Горячая, холодная вода</li>
-                                </ul>
-                            </div>
-                            <a class="card__button" href="#"> Узнать цену </a>
-                        </div>
-                    </article>
-                    <p class="rooms__title-cottages title">Наши коттеджи</p>
-                    <article class="card card-revert">
-                        <img class="card__img" src="images/wood-cottage.jpg" alt="Фото коттеджа" />
-                        <div class="card__content">
-                            <h4 class="card__title">Деревянный коттедж</h4>
-                            <div class="card__items">
-                                <ul class="card__list-left">
-                                    <li class="card__item">Кондиционер</li>
-                                    <li class="card__item">Холодильник</li>
-                                    <li class="card__item">Телевизор</li>
-                                </ul>
-                                <ul class="card__list-right">
-                                    <li class="card__item">Личный балкон</li>
-                                    <li class="card__item">Санузел с душевой кабинкой</li>
-                                    <li class="card__item">Горячая, холодная вода</li>
-                                </ul>
-                            </div>
-                            <a class="card__button" href="#"> Узнать цену </a>
-                        </div>
-                    </article>
-                    <article class="card">
-                        <img class="card__img" src="images/stone-cottage.jpg" alt="Фото коттеджа" />
-                        <div class="card__content">
-                            <h4 class="card__title">Каменный коттедж</h4>
-                            <div class="card__items">
-                                <ul class="card__list-left">
-                                    <li class="card__item">Кондиционер</li>
-                                    <li class="card__item">Холодильник</li>
-                                    <li class="card__item">Телевизор</li>
-                                </ul>
-                                <ul class="card__list-right">
-                                    <li class="card__item">Личный балкон</li>
-                                    <li class="card__item">Санузел с душевой кабинкой</li>
-                                    <li class="card__item">Горячая, холодная вода</li>
-                                </ul>
-                            </div>
-                            <a class="card__button" href="#"> Узнать цену </a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <section class="service">
-                <div class="container">
-<h2 class="service__title title">Услуги и сервис</h2>
-                    <ul class="service__items">
-                        <li class="service__item">
-                            <img class="service__img" src="images/canteen.jpg" alt="Фото столовой">
-                            <p class="service__descr">Кафе, индивидуальное меню
-                                Столовая - полный пансион (3 разовое) - 290 грн</p>
-                            <a class="service__link" href="#">Заказать</a>
-                        </li>
-                        <li class="service__item">
-                            <img class="service__img" src="images/tennis.jpg" alt="Фото столовой">
-                            <p class="service__descr">Возле входа в номера стоит стол для настольного тенниса, где может сыграть любой желающий
-                            </p>
-                            <a class="service__link" href="#">Заказать</a>
-                        </li>
-                        <li class="service__item">
-                            <img class="service__img" src="images/billiards.jpg" alt="Фото столовой">
-                            <p class="service__descr">У нас на территории имеется бильярд, где вы сможете тихо и спокойно провести время
-                                50 грн/час</p>
-                            <a class="service__link" href="#">Заказать</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="advantages">
-                <div class="container">
-<h2 class="advantages__title title">Здесь Живет Уют</h2>
-                    <p class="advantages__descr">Подари себе и своим близким
-                        незабывемый отдых на природе возле моря!</p>
-                    <ul class="advantages__items">
-                        <li class="advantages__item">
-                            <img class="advantages__img" src="images/nature.jpg" alt="#">
-                            <div class="advantages__content">
-                                <p class="advantages__name">Природа</p>
-                                <p class="advantages__text">Азовский воздух насыщен озоном, бромом, йодом в сочетании с морскими, солнечными и воздушными процедурами будут полезны для вашего здоровья</p>
-                            </div>
-                        </li>
-                        <li class="advantages__item advantages__item--revert">
-                            <img class="advantages__img" src="images/dirt.jpg" alt="#">
-                            <div class="advantages__content">
-                                <p class="advantages__name advantages__name--revert">Лечебные грязи</p>
-                                <p class="advantages__text">Недалеко, в 6 километрах от нашей базы находятся залежи лечебных лиманных грязей и целебных голубых глин, которые чрезвычайно успешно используются для лечения таких заболеваний как дерматит, псориаз, витилиго, артрит, артроз и др.</p>
-                            </div>
-                        </li>
-                        <li class="advantages__item">
-                            <img class="advantages__img" src="images/kids.jpg" alt="#">
-                            <div class="advantages__content">
-                                <p class="advantages__name">Развлечения  для детей </p>
-                                <p class="advantages__text">Ваши дети не будут скучать на отдыхе вместе с развлекательной программой наших аниматоров, а вы сможете полноценно насладится отдыхом</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="feedback">
-                <div class="container">
-                    <h2 class="feedback__title title">
-                        Отзывы
-                    </h2>
-                </div>
-            </section>
-        </main>
-        <footer class="footer">
-
-        </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>-->
-        <script src="js/index.min.js"></script>
-    </body>
+            <ul class="top__slider">
+              <li class="top__slider-item">
+                <img class="top__slider-img" src="images/1.png" alt="Фото моря" />
+              </li>
+              <li class="top__slider-item">
+                <img class="top__slider-img" src="images/1.png" alt="Фото моря" />
+              </li>
+              <li class="top__slider-item">
+                <img class="top__slider-img" src="images/1.png" alt="Фото моря" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="present" id="present">
+        <div class="container">
+          <div class="book">
+            <div class="book__item">
+              <p class="book__title">Гости</p>
+              <select class="book__person">
+                <option value="2 человека">2 человека</option>
+                <option value="3 человека" selected>3 человека</option>
+                <option value="4 человека">4 человека</option>
+                <option value="5 человек">5 человек</option>
+                <option value="6 человек">6 человек</option>
+                <option value="7 человек">7 человек</option>
+                <option value="8 человек">8 человек</option>
+                <option value="9 человек">9 человек</option>
+                <option value="10 человек">10 человек</option>
+              </select>
+            </div>
+            <div class="book__item book__item--calendar">
+              <p class="book__title">Дата заезда</p>
+              <input class="book__date" value="2021-01-01" type="date" />
+            </div>
+            <div class="book__item book__item--calendar">
+              <p class="book__title">Дата выезда</p>
+              <input class="book__date" value="2021-01-01" type="date" />
+            </div>
+            <button class="book__button" type="button">Забронировать</button>
+          </div>
+          <h2 class="present__title title">Посмотрите фото нашей базы</h2>
+          <img class="present__img" src="images/main.jpg" alt="Фото базы" />
+        </div>
+      </section>
+      <section class="benefits" id="benefits">
+        <div class="container">
+          <h2 class="benefits__title title">Мы гарантируем хорошее настроение и безопасность</h2>
+          <div class="benefits__inner">
+            <ul class="benefits__list-left">
+              <li class="benefits__item-left benefits__item-left--house">
+                Большой выбор номеров и коттеджов
+              </li>
+              <li class="benefits__item-left benefits__item-left--lock">Охраняемая территория</li>
+              <li class="benefits__item-left benefits__item-left--parking">Бесплатная парковка</li>
+              <li class="benefits__item-left benefits__item-left--animals">
+                Можно отдыхать с животными
+              </li>
+            </ul>
+            <img class="benefits__img" src="images/benefits.jpg" alt="Вид на море" />
+            <ul class="benefits__list-right">
+              <li class="benefits__item-right benefits__item-right--cake">
+                Проведение мероприятий
+              </li>
+              <li class="benefits__item-right benefits__item-right--sun">
+                Развлечение для всей семьи
+              </li>
+              <li class="benefits__item-right benefits__item-right--insects">
+                Обработка от комаров
+              </li>
+              <li class="benefits__item-right benefits__item-right--jellyfish">
+                Защитная сетка от медуз
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="rooms" id="rooms">
+        <div class="container">
+          <h2 class="rooms__title title">Наши номера</h2>
+          <article class="card">
+            <img class="card__img" src="images/one-room.jpg" alt="Фото номера" />
+            <div class="card__content">
+              <h4 class="card__title">Однокомантный номер люкс/стандарт</h4>
+              <div class="card__items">
+                <ul class="card__list-left">
+                  <li class="card__item">Кондиционер</li>
+                  <li class="card__item">Холодильник</li>
+                  <li class="card__item">Телевизор</li>
+                </ul>
+                <ul class="card__list-right">
+                  <li class="card__item">Личный балкон</li>
+                  <li class="card__item">Санузел с душевой кабинкой</li>
+                  <li class="card__item">Горячая, холодная вода</li>
+                </ul>
+              </div>
+              <a class="card__button" href="#"> Узнать цену </a>
+            </div>
+          </article>
+          <article class="card card-revert">
+            <img class="card__img" src="images/two-room.jpg" alt="Фото номера" />
+            <div class="card__content">
+              <h4 class="card__title">Двухкомнатный номер люкс</h4>
+              <div class="card__items">
+                <ul class="card__list-left">
+                  <li class="card__item">Кондиционер</li>
+                  <li class="card__item">Холодильник</li>
+                  <li class="card__item">Телевизор</li>
+                </ul>
+                <ul class="card__list-right">
+                  <li class="card__item">Личный балкон</li>
+                  <li class="card__item">Санузел с душевой кабинкой</li>
+                  <li class="card__item">Горячая, холодная вода</li>
+                </ul>
+              </div>
+              <a class="card__button" href="#"> Узнать цену </a>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="images/three-room.jpg" alt="Фото номера" />
+            <div class="card__content">
+              <h4 class="card__title">Трехкомнатный номер люкс</h4>
+              <div class="card__items">
+                <ul class="card__list-left">
+                  <li class="card__item">Кондиционер</li>
+                  <li class="card__item">Холодильник</li>
+                  <li class="card__item">Телевизор</li>
+                </ul>
+                <ul class="card__list-right">
+                  <li class="card__item">Личный балкон</li>
+                  <li class="card__item">Санузел с душевой кабинкой</li>
+                  <li class="card__item">Горячая, холодная вода</li>
+                </ul>
+              </div>
+              <a class="card__button" href="#"> Узнать цену </a>
+            </div>
+          </article>
+          <p class="rooms__title-cottages title">Наши коттеджи</p>
+          <article class="card card-revert">
+            <img class="card__img" src="images/wood-cottage.jpg" alt="Фото коттеджа" />
+            <div class="card__content">
+              <h4 class="card__title">Деревянный коттедж</h4>
+              <div class="card__items">
+                <ul class="card__list-left">
+                  <li class="card__item">Кондиционер</li>
+                  <li class="card__item">Холодильник</li>
+                  <li class="card__item">Телевизор</li>
+                </ul>
+                <ul class="card__list-right">
+                  <li class="card__item">Личный балкон</li>
+                  <li class="card__item">Санузел с душевой кабинкой</li>
+                  <li class="card__item">Горячая, холодная вода</li>
+                </ul>
+              </div>
+              <a class="card__button" href="#"> Узнать цену </a>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card__img" src="images/stone-cottage.jpg" alt="Фото коттеджа" />
+            <div class="card__content">
+              <h4 class="card__title">Каменный коттедж</h4>
+              <div class="card__items">
+                <ul class="card__list-left">
+                  <li class="card__item">Кондиционер</li>
+                  <li class="card__item">Холодильник</li>
+                  <li class="card__item">Телевизор</li>
+                </ul>
+                <ul class="card__list-right">
+                  <li class="card__item">Личный балкон</li>
+                  <li class="card__item">Санузел с душевой кабинкой</li>
+                  <li class="card__item">Горячая, холодная вода</li>
+                </ul>
+              </div>
+              <a class="card__button" href="#"> Узнать цену </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="service">
+        <div class="container">
+          <h2 class="service__title title">Услуги и сервис</h2>
+          <ul class="service__items">
+            <li class="service__item">
+              <img class="service__img" src="images/canteen.jpg" alt="Фото столовой" />
+              <p class="service__descr">
+                Кафе, индивидуальное меню Столовая - полный пансион (3 разовое) - 290 грн
+              </p>
+              <a class="service__link" href="#">Заказать</a>
+            </li>
+            <li class="service__item">
+              <img class="service__img" src="images/tennis.jpg" alt="Фото столовой" />
+              <p class="service__descr">
+                Возле входа в номера стоит стол для настольного тенниса, где может сыграть любой
+                желающий
+              </p>
+              <a class="service__link" href="#">Заказать</a>
+            </li>
+            <li class="service__item">
+              <img class="service__img" src="images/billiards.jpg" alt="Фото столовой" />
+              <p class="service__descr">
+                У нас на территории имеется бильярд, где вы сможете тихо и спокойно провести время
+                50 грн/час
+              </p>
+              <a class="service__link" href="#">Заказать</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <h2 class="advantages__title title">Здесь Живет Уют</h2>
+          <p class="advantages__descr">
+            Подари себе и своим близким незабывемый отдых на природе возле моря!
+          </p>
+          <ul class="advantages__items">
+            <li class="advantages__item">
+              <img class="advantages__img" src="images/nature.jpg" alt="Фото природы" />
+              <div class="advantages__content">
+                <p class="advantages__name">Природа</p>
+                <p class="advantages__text">
+                  Азовский воздух насыщен озоном, бромом, йодом в сочетании с морскими, солнечными и
+                  воздушными процедурами будут полезны для вашего здоровья
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--revert">
+              <img class="advantages__img" src="images/dirt.jpg" alt="Фото лечебных грязей" />
+              <div class="advantages__content">
+                <p class="advantages__name advantages__name--revert">Лечебные грязи</p>
+                <p class="advantages__text">
+                  Недалеко, в 6 километрах от нашей базы находятся залежи лечебных лиманных грязей и
+                  целебных голубых глин, которые чрезвычайно успешно используются для лечения таких
+                  заболеваний как дерматит, псориаз, витилиго, артрит, артроз и др.
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item">
+              <img class="advantages__img" src="images/kids.jpg" alt="Фото детей" />
+              <div class="advantages__content">
+                <p class="advantages__name">Развлечения для детей</p>
+                <p class="advantages__text">
+                  Ваши дети не будут скучать на отдыхе вместе с развлекательной программой наших
+                  аниматоров, а вы сможете полноценно насладится отдыхом
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title title">Отзывы</h2>
+          <ul class="feedback__items">
+            <li class="feedback__item">
+              <img class="feedback__img" src="images/guest1.jpg" alt="Фото гостя" />
+              <div class="feedback__content">
+                <p class="feedback__name">Александр А.</p>
+                <p class="feedback__text">
+                  Отличный отдых мне все понравилось, Получили удовольствие от отдыха всей семьей!
+                  Питание просто супер спасибо Лёхе.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="address" id="address">
+        <div class="container">
+          <h2 class="address__title title">Как до нас добраться</h2>
+          <div class="address__content">
+            <div class="address__descr">
+              <p class="address__text">
+                60 км от Мелетополя в сторону Приморска, поворот на право возле села Владимировка и
+                ехать до села Строгановка затем проехать 4 км в сторону села Районовка повернуть
+                возле указателя Екскребул и через 2 км вы приедете на базу. Адресс: вулиця Степова,
+                100, Строганівка, Запорізька область
+              </p>
+              <address class="route">вулиця Степова, 100, Строганівка, Запорізька область</address>
+              <a class="tel tel-top" href="tel:380509205341"> +38 (050) 920-53-41 </a>
+              <a class="tel" href="tel:380504865757"> +38 (050) 486-57-57 </a>
+            </div>
+            <div class="address__map">
+              <iframe
+                class="address__map-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d968.1684326004564!2d35.914833931041144!3d46.65848469521693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e80c0fab6aafe5%3A0x14bf05f2fd05131b!2z0K3QmtCh0KHQmtCg0JXQkdCj0Js!5e0!3m2!1sru!2sua!4v1628238028945!5m2!1sru!2sua"
+                width="510"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__button feedback-button" href="#">Обратный Звонок</a>
+          <div class="footer__links">
+            <a class="footer__link" href="#">
+              <svg class="icon" width="38" height="37">
+                <use xlink:href="images/sprite.svg#inst"></use>
+              </svg>
+            </a>
+            <a class="footer__link" href="#">
+              <svg class="icon" width="34" height="40">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__logo" href="#">
+            <img class="footer__img" src="images/icons/footer-logo.svg" alt="Логотип" />
+          </a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">О нас</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Контакты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Стоимость</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Галерея</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Забронировать</a>
+            </li>
+          </ul>
+          <div class="footer__descr">
+            <address class="route footer__route">
+              вулиця Степова, 100, Строганівка, Запорізька область
+            </address>
+            <a class="tel tel-top" href="tel:380509205341"> +38 (050) 920-53-41 </a>
+            <a class="tel tel-bottom" href="tel:380504865757"> +38 (050) 486-57-57 </a>
+            <a class="footer__mail" href="mailto:alesya040286@gmail.com">alesya040286@gmail.com </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/index.min.js"></script>
+  </body>
 </html>

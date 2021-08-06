@@ -3,7 +3,7 @@
   left: 0;
   right: 0;
   top: 0;
-  z-index:10;
+  z-index: 10;
   padding-top: 30px;
 
   .menu {
@@ -31,17 +31,8 @@
     }
 
     &__button {
-      padding: 5px;
-      width: 100%;
-      max-width: 195px;
-      border: none;
-      border-radius: 10px;
-      font-family: "Pacifico", sans-serif;
-      font-size: 16px;
-      line-height: 22px;
       color: $wh;
       background-color: $accent;
-      cursor: pointer;
     }
   }
 }
