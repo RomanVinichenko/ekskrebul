@@ -1,6 +1,7 @@
 .feedback {
   position: relative;
   padding-top: 250px;
+
   &::before {
     content: "";
     position: absolute;
@@ -11,5 +12,39 @@
     background-image: url("../images/downbg.svg");
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1085px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: $accent;
+
+    &:not(:last-child) {
+      margin-bottom: 122px;
+    }
+  }
+
+  &__content {
+    padding: 0 60px;
+    width: 100%;
+  }
+
+  &__name {
+    margin-bottom: 25px;
+    font-size: 39px;
+    color: $wh;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 550px;
+    font-size: 26px;
+    line-height: 31px;
+    color: $wh;
   }
 }

@@ -4,7 +4,6 @@ body {
   font-size: 18px;
   color: $bl;
   background-color: #f0ffff;
-
 }
 
 .container {
@@ -28,5 +27,60 @@ body {
     content: "";
     position: absolute;
     background-size: cover;
+  }
+}
+
+.feedback-button {
+  padding: 5px;
+  width: 100%;
+  max-width: 195px;
+  max-height: 33px;
+  border-radius: 10px;
+  font-family: "Pacifico", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.tel {
+  padding-left: 65px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.tel-top {
+  position: relative;
+  margin-bottom: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icons/tel.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.route {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 65px;
+  width: 100%;
+  max-width: 380px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icons/nav.svg");
   }
 }

@@ -1,0 +1,28 @@
+.address {
+  padding: 250px 0 150px;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    font-size: 25px;
+    line-height: 38px;
+  }
+
+  &__map {
+    width: 100%;
+    max-width: 510px;
+  }
+}
