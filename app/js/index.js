@@ -13,7 +13,8 @@ $(function () {
     dots: true,
     arrows: false,
   });
-  $('.menu a, .footer a').on('click', function (event) {
+
+  $('.menu a, .footer__logo, .footer__list a').on('click', function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top;

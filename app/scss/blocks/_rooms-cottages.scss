@@ -1,23 +1,17 @@
 .rooms {
-  padding: 250px 0 5px;
+  padding: 160px 0 10px;
   background-image: url("../images/bg.png");
   background-size: cover;
 
   &__title::after {
-    right: 308px;
-    top: -47px;
-    width: 150px;
-    height: 120px;
+    right: 26%;
+    top: -69px;
+    width: 143px;
+    height: 123px;
     background-image: url("../images/icons/crab.svg");
   }
 
-  &__title-cottages::after {
-    left: 20px;
-    top: -134px;
-    width: 258px;
-    height: 285px;
-    background-image: url("../images/icons/lighthouse.svg");
-  }
+
 }
 
 .card {
@@ -28,10 +22,18 @@
   overflow: hidden;
   border-radius: 15px;
   background-color: $wh;
+  &:last-child {
+    margin: 0 auto 10px;
+
+  }
 
   &__content {
-    padding: 25px 20px 25px 50px;
+    padding: 25px 20px 20px 50px;
     width: 100%;
+  }
+
+  &__img {
+    object-fit: cover;
   }
 
   &__title {
@@ -43,7 +45,11 @@
   &__items {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 24px;
+
+    @include r($lg) {
+      display: block;
+    }
   }
 
   &__list-left {
@@ -51,16 +57,28 @@
     width: 100%;
     max-width: 230px;
     list-style: initial;
+
+    @include r($lg) {
+      margin-bottom: 10px;
+    }
   }
 
   &__list-right {
     width: 100%;
     max-width: 350px;
     list-style: initial;
+
+    @include r($lg) {
+      padding-left: 30px;
+    }
   }
 
   &__item {
     font-size: 24px;
+
+    @include r($xl) {
+      font-size: 20px;
+    }
   }
 
   &__item:not(:last-child) {
@@ -69,7 +87,8 @@
 
   &__button {
     display: block;
-    padding: 12px 80px;
+    padding: 12px;
+    text-align: center;
     width: 293px;
     border-radius: 10px;
     font-size: 24px;
@@ -91,4 +110,19 @@
 
 .card-revert {
   flex-direction: row-reverse;
+}
+
+.cottages {
+  background-color: #cbebf8;
+  padding: 100px 0 10px;
+  &__title {
+    margin-bottom: 100px;
+  }
+  &__title::after {
+    left: 20px;
+    top: -104px;
+    width: 258px;
+    height: 285px;
+    background-image: url("../images/icons/lighthouse.svg");
+  }
 }

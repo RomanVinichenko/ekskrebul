@@ -1,7 +1,7 @@
 .advantages {
   position: relative;
   z-index: 5;
-  padding: 250px 0 50px;
+  padding: 160px 0 10px;
   background-image: url("../images/bg.png");
   background-size: cover;
 
@@ -15,6 +15,10 @@
     height: 225px;
     background-image: url("../images/icons/coral-left.svg");
     background-repeat: no-repeat;
+
+    @include r($xl) {
+      display: none;
+    }
   }
 
   &::after {
@@ -24,14 +28,32 @@
     top: 41%;
     width: 175px;
     height: 225px;
+    z-index: -1;
     background-image: url("../images/icons/coral-right.svg");
     background-repeat: no-repeat;
+
+    @include r($xl) {
+      display: none;
+    }
+  }
+
+  &__img {
+    @include r($xl) {
+      width: 100%;
+      max-width: 400px;
+      object-fit: cover;
+    }
+
+    @include r($md) {
+      max-width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__title {
     &::after {
-      left: -50px;
-      top: -300px;
+      left: -85px;
+      top: -268px;
       width: 200px;
       height: 175px;
       background-image: url("../images/icons/pearl.svg");
@@ -40,10 +62,10 @@
 
   &__descr {
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 100%;
     max-width: 700px;
-    line-height: 30px;
+    line-height: 1.75;
     letter-spacing: 0.3em;
     text-align: center;
   }
@@ -55,14 +77,27 @@
     overflow: hidden;
     border-radius: 10px;
     background-color: $wh;
+    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 122px;
+
+      @include r($xl) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @include r($md) {
+      flex-direction: column;
     }
   }
 
   &__content {
     padding: 30px 20px;
+
+    @include r($md) {
+      text-align: center;
+    }
   }
 
   &__name {
@@ -76,8 +111,7 @@
   &__text {
     width: 100%;
     max-width: 575px;
-    font-weight: 300;
-    line-height: 30px;
+    line-height: 1.65;
   }
 }
 
@@ -85,6 +119,10 @@
   flex-direction: row-reverse;
   color: $wh;
   background-color: $accent;
+
+  @include r($md) {
+    flex-direction: column;
+  }
 }
 
 .advantages__name--revert {

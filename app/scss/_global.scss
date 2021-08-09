@@ -1,7 +1,7 @@
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  @extend %lato-400;
   font-size: 18px;
+  line-height: 1.2;
   color: $bl;
   background-color: #f0ffff;
 }
@@ -14,12 +14,11 @@ body {
 
 .title {
   position: relative;
-  margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-family: "Pacifico", sans-serif;
   font-weight: 400;
   font-size: 57px;
-  line-height: 100px;
+  line-height: 1.4;
   text-align: center;
   color: $accent;
 
@@ -27,6 +26,19 @@ body {
     content: "";
     position: absolute;
     background-size: cover;
+
+    @include r(1180) {
+      display: none;
+    }
+  }
+
+  @include r($xl) {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  @include r($md) {
+    font-size: 36px;
   }
 }
 
@@ -34,18 +46,16 @@ body {
   padding: 5px;
   width: 100%;
   max-width: 195px;
-  max-height: 33px;
   border-radius: 10px;
   font-family: "Pacifico", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.5;
   text-align: center;
 }
 
 .tel {
   padding-left: 65px;
   font-size: 20px;
-  line-height: 24px;
 }
 
 .tel-top {
@@ -69,10 +79,9 @@ body {
   margin-bottom: 50px;
   padding-left: 65px;
   width: 100%;
-  max-width: 380px;
+  max-width: 370px;
   font-style: normal;
   font-size: 20px;
-  line-height: 24px;
 
   &::before {
     content: "";

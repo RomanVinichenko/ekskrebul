@@ -2,20 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 150px;
+  margin-bottom: 160px;
   padding: 55px;
   border-radius: 20px;
   box-shadow: 1px 11px 15px rgba(0, 0, 0, 0.3);
   background: linear-gradient(180deg, #a3e4ff 0%, #f0ffff 100%);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 
   &__person {
     border: none;
     background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+
   }
 
   &__date {
     border: none;
     background-color: transparent;
+    font-weight: 400;
+    font-size: 20px;
+
   }
 
   &__item {
@@ -29,32 +37,29 @@
       top: 0;
       width: 37px;
       height: 35px;
-      background-image: url("../images/user.svg");
+      background-image: url("../images/icons/user.svg");
     }
   }
 
   .book__item--calendar {
     &::before {
-      background-image: url("../images/calendar.svg");
+      background-image: url("../images/icons/calendar.svg");
     }
   }
 
   &__title {
     margin-bottom: 15px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
     font-size: 26px;
-    line-height: 30px;
+    padding-left: 4px;
   }
 
   &__button {
-    padding: 14px 30px;
+    padding: 14px;
     width: 262px;
     border: none;
     border-radius: 10px;
-    font-weight: 300;
+    @extend %lato-400;
     font-size: 26px;
-    line-height: 31px;
     color: $wh;
     background-color: $accent;
     cursor: pointer;

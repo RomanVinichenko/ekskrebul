@@ -11,19 +11,14 @@
     align-items: center;
     justify-content: space-between;
 
-    .logo {
-      margin-right: 100px;
-    }
-
     &__list {
       display: flex;
-      margin-right: auto;
     }
 
     &__link {
       font-size: 20px;
       line-height: 24px;
-      color: #585858;
+      color: $dark-gray;
     }
 
     &__item:not(:last-child) {
