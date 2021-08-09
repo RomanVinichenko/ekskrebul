@@ -1,3 +1,25 @@
 $wh: #fff;
 $bl: #000;
 $accent: #63a7cc;
+$dark-gray: #585858;
+$xl: 1180;
+$lg: 999;
+$md: 750;
+$sm: 520;
+
+%lato-300 {
+  font-family: "Lato-Light", sans-serif;
+  font-weight: 300;
+}
+%lato-400 {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+}
+%lato-500 {
+  font-family: "Lato-Medium", sans-serif;
+  font-weight: 500;
+}
+%lato-600 {
+  font-family: "Lato-Semibold", sans-serif;
+  font-weight: 600;
+}

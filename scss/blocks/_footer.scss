@@ -7,12 +7,16 @@
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
+
   }
 
   &__button {
     margin-right: 200px;
     margin-left: auto;
     background-color: #cbebf8;
+    @include r($xl){
+      margin: 0;
+    }
   }
 
   &__bottom {
@@ -20,8 +24,27 @@
     justify-content: space-between;
   }
 
+  &__img {
+    @include r($xl){
+      display: none;
+    }
+  }
+  &__link:first-child {
+    margin-right: 10px;
+  }
+
+  &__link{
+    display: block;
+  }
+
   &__links {
+    display: flex;
+    align-items: center;
     margin-right: 200px;
+    @include r($xl){
+    margin: 0;
+  }
+
   }
 
   &__list {
@@ -29,11 +52,16 @@
     flex-wrap: wrap;
     width: 100%;
     max-width: 320px;
+    align-self: center;
+    @include r($xl){
+      margin: 0;
+    }
   }
 
   &__item {
     width: 100%;
     max-width: 160px;
+    height: 44px;
   }
 
   &__descr {
@@ -55,7 +83,6 @@
     position: relative;
     padding-left: 65px;
     font-size: 20px;
-    line-height: 24px;
 
     &::before {
       content: "";
