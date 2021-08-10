@@ -1,9 +1,12 @@
 .top {
   &__inner {
-    padding: 155px 0 80px;
+    padding: 135px 0 20px;
 
     @include r($xl) {
       text-align: center;
+    }
+    @include r($xl) {
+      padding: 145px 0 20px;
     }
   }
 
@@ -14,17 +17,23 @@
     max-width: 535px;
 
     @include r($xl) {
-      padding: 130px 0 0;
-      max-width: 450px;
+      max-width: 420px;
+      text-align: left;
+    }
+    @include r($lg) {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
     }
   }
 
   &__slider {
     display: inline-block;
     max-width: 550px;
+    width: 100%;
 
     @include r($xl) {
-      padding: 20px 0;
+      max-width: 450px;
     }
   }
 
@@ -34,6 +43,10 @@
 
     @include r($xl) {
       font-size: 26px;
+    }
+    @include r($sm) {
+      font-size: 20px;
+      margin-bottom: 10px;
     }
 
     @extend %lato-600;
@@ -50,6 +63,12 @@
     @include r($xl) {
       font-size: 90px;
     }
+    @include r($md) {
+      font-size: 70px;
+    }
+    @include r($sm) {
+      font-size: 55px;
+    }
   }
 
   &__subtitle {
@@ -59,7 +78,9 @@
 
     @include r($xl) {
       font-size: 22px;
-      line-height: 30px;
+    }
+    @include r($sm) {
+      font-size: 18px;
     }
 
     @extend %lato-500;
