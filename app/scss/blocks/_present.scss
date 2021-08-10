@@ -1,15 +1,16 @@
 .present {
-  padding: 40px 0 10px;
+  padding: 75px 0 10px;
   background-image: url("../images/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
 
   &__title {
     font-size: 70px;
+    padding-top: 80px;
 
     &::after {
       right: -3px;
-      top: -102px;
+      top: -25px;
       width: 160px;
       height: 192px;
       background-image: url("../images/icons/star.svg");
@@ -35,4 +36,40 @@
     margin: 0 auto;
     border-radius: 20px;
   }
+}
+
+.slick-prev {
+  font-size: 0;
+  position: absolute;
+  border: none;
+  padding: 0;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("../images/icons/left-arrow.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 34px;
+  height: 74px;
+  cursor: pointer;
+
+}
+.slick-next {
+  font-size: 0;
+  position: absolute;
+  border: none;
+  padding: 0;
+  right: -52px;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("../images/icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 36px;
+  height: 74px;
+  cursor: pointer;
 }

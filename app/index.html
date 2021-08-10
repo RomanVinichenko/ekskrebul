@@ -22,13 +22,13 @@
               <a class="menu__link" href="#present">Забронировать</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#benefits">О Нас</a>
+              <a class="menu__link" href="#">О Нас</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#rooms">Стоимость</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#advantages">Галерея</a>
+              <a class="menu__link" href="#gallery">Галерея</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#address">Контакты</a>
@@ -47,7 +47,7 @@
               <p class="top__pretitile">База отдыха на Aзовском море!</p>
               <h1 class="top__title">Ekskrebul</h1>
               <p class="top__subtitle">
-                Семейный отдых в пансионате на берегу Азовского моря, аренда номеров и домиков в
+                Семейный отдых в пансионате на берегу Азовского моря <span id="present"></span>, аренда номеров и домиков в
                 пансионате с 3х разовым питанием.
               </p>
             </div>
@@ -65,10 +65,10 @@
           </div>
         </div>
       </section>
-      <section class="present" id="present">
+      <section class="present" >
         <div class="container">
           <div class="book">
-            <div class="book__item">
+            <div class="book__item"  >
               <p class="book__title">Гости</p>
               <select class="book__person">
                 <option value="2 человека">2 человека</option>
@@ -92,7 +92,7 @@
             </div>
             <button class="book__button" type="button">Забронировать</button>
           </div>
-          <h2 class="present__title title">Посмотрите фото нашей базы</h2>
+          <h2 class="present__title title" id="gallery">Посмотрите фото нашей базы</h2>
           <div class="present__slider">
             <img class="present__img" src="images/main-1.jpg" alt="Фото базы" />
             <img class="present__img" src="images/main-2.jpg" alt="Фото базы" />
@@ -136,7 +136,9 @@
         <div class="container">
           <h2 class="rooms__title title">Наши номера</h2>
           <article class="card">
+            <div class="card__img-inner">
             <img class="card__img" src="images/one-room.jpg" alt="Фото номера" />
+            </div>
             <div class="card__content">
               <h4 class="card__title">Однокомантный номер люкс/стандарт</h4>
               <div class="card__items">
@@ -155,7 +157,11 @@
             </div>
           </article>
           <article class="card card-revert">
+            <div class="card__img-inner">
+
             <img class="card__img" src="images/two-room.jpg" alt="Фото номера" />
+            </div>
+
             <div class="card__content">
               <h4 class="card__title">Двухкомнатный номер люкс</h4>
               <div class="card__items">
@@ -174,7 +180,11 @@
             </div>
           </article>
           <article class="card">
+            <div class="card__img-inner">
+
             <img class="card__img" src="images/three-room.jpg" alt="Фото номера" />
+            </div>
+
             <div class="card__content">
               <h4 class="card__title">Трехкомнатный номер люкс</h4>
               <div class="card__items">
@@ -198,7 +208,11 @@
         <div class="container">
           <p class="cottages__title title">Наши коттеджи</p>
           <article class="card card-revert">
+            <div class="card__img-inner">
+
             <img class="card__img" src="images/wood-cottage.jpg" alt="Фото коттеджа" />
+            </div>
+
             <div class="card__content">
               <h4 class="card__title">Деревянный коттедж</h4>
               <div class="card__items">
@@ -218,7 +232,11 @@
           </article>
 
           <article class="card">
+            <div class="card__img-inner">
+
             <img class="card__img" src="images/stone-cottage.jpg" alt="Фото коттеджа" />
+            </div>
+
             <div class="card__content">
               <h4 class="card__title">Каменный коттедж</h4>
               <div class="card__items">
@@ -268,7 +286,7 @@
           </ul>
         </div>
       </section>
-      <section class="advantages" id="advantages">
+      <section class="advantages">
         <div class="container">
           <h2 class="advantages__title title">Здесь Живет Уют</h2>
           <p class="advantages__descr">
@@ -381,7 +399,7 @@
           </a>
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="#benefits">О нас</a>
+              <a class="footer__link" href="#">О нас</a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#address">Контакты</a>
@@ -390,7 +408,7 @@
               <a class="footer__link" href="#rooms">Стоимость</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#advantages">Галерея</a>
+              <a class="footer__link" href="#gallery">Галерея</a>
             </li>
             <li class="footer__item">
               <a class="footer__link" href="#present">Забронировать</a>
