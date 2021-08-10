@@ -23,9 +23,9 @@
   }
 
   &__title {
+    margin: 0 auto 60px;
     width: 100%;
     max-width: 650px;
-    margin: 0 auto 60px;
     color: $accent;
 
     &::after {
@@ -98,6 +98,7 @@
 
   .benefits__item-left--parking {
     max-width: 261px;
+
     &::before {
       background-image: url("../images/icons/parking.svg");
     }
@@ -118,8 +119,9 @@
   }
 
   .benefits__item-right--sun {
-    max-width: 265px;
     margin: 0 0 85px auto;
+    max-width: 265px;
+
     &::before {
       background-image: url("../images/icons/sun.svg");
     }

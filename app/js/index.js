@@ -10,7 +10,18 @@ $(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
     dots: true,
+    arrows: false,
+  });
+  $('.present__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2800,
+    dots: false,
     arrows: false,
   });
 

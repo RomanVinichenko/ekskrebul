@@ -24,6 +24,13 @@
     }
   }
 
+  &__slider {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+  }
+
   &__img {
     margin: 0 auto;
     border-radius: 20px;
