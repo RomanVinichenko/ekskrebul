@@ -22,7 +22,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2800,
     dots: false,
-    arrows: false,
+    arrows: true,
   });
 
   $('.menu a, .footer__logo, .footer__list a').on('click', function (event) {

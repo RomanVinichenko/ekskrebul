@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 200px;
   padding: 48px 55px;
   border-radius: 20px;
   box-shadow: 1px 11px 15px rgba(0, 0, 0, 0.3);
@@ -38,6 +37,7 @@
     font-weight: 400;
     font-size: 20px;
     background-color: transparent;
+    max-width: 161px;
     @include r($md) {
       font-size: 18px;
     }
@@ -102,4 +102,8 @@
 
     @extend %lato-400;
   }
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  margin-left: 0;
 }
