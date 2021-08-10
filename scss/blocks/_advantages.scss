@@ -26,9 +26,9 @@
     position: absolute;
     right: 0;
     top: 41%;
+    z-index: -1;
     width: 175px;
     height: 225px;
-    z-index: -1;
     background-image: url("../images/icons/coral-right.svg");
     background-repeat: no-repeat;
 
@@ -72,12 +72,12 @@
 
   &__item {
     display: flex;
+    margin: 0 auto;
     width: 100%;
     max-width: 1085px;
     overflow: hidden;
     border-radius: 10px;
     background-color: $wh;
-    margin: 0 auto;
 
     &:not(:last-child) {
       margin-bottom: 122px;
