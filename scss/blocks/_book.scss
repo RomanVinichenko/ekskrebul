@@ -8,18 +8,19 @@
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background: linear-gradient(180deg, #a3e4ff 0%, #f0ffff 100%);
-  @include r($xl) {
+  @include r($lg) {
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 40px;
+    padding: 20px 30px;
+    max-width: 700px;
+    margin: 0 auto 50px;
 
   }
   @include r($md) {
     flex-direction: column;
     max-width: 500px;
     width: 100%;
-    margin: 0 auto 50px;
-    padding: 25px 15px;
+    padding: 20px 10px;
   }
 
   &__person {
@@ -27,8 +28,11 @@
     font-weight: 400;
     font-size: 20px;
     background-color: transparent;
-    @include r($md) {
+    @include r($xl) {
       font-size: 18px;
+    }
+    @include r($md) {
+      font-size: 16px;
     }
   }
 
@@ -38,16 +42,20 @@
     font-size: 20px;
     background-color: transparent;
     max-width: 161px;
-    @include r($md) {
+    @include r($xl) {
       font-size: 18px;
+    }
+    @include r($md) {
+      font-size: 16px;
     }
   }
 
   &__item {
     position: relative;
     padding-left: 50px;
-    @include r($xl){
-      margin-bottom: 20px;
+    margin: 0 10px;
+    @include r($lg){
+      margin: 22px 10px;
     }
     @include r($md){
       max-width: 230px;
@@ -75,9 +83,12 @@
     margin-bottom: 15px;
     padding-left: 4px;
     font-size: 26px;
-    @include r($md) {
-      font-size: 22px;
+    @include r($xl) {
+      font-size: 20px;
       margin-bottom: 10px;
+    }
+    @include r($md) {
+      font-size: 18px;
     }
   }
 
@@ -91,7 +102,7 @@
     background-color: $accent;
     transition: box-shadow 0.2s;
     cursor: pointer;
-    @include r($md) {
+    @include r($xl) {
       width: 220px;
       font-size: 20px;
     }

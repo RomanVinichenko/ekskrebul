@@ -28,7 +28,7 @@
   &__slider {
     margin: 0 auto;
     width: 100%;
-    max-width: 850px;
+    max-width: 980px;
     text-align: center;
   }
 
@@ -42,8 +42,7 @@
   font-size: 0;
   position: absolute;
   border: none;
-  padding: 0;
-  left: -50px;
+  left: -70px;
   top: 50%;
   transform: translateY(-50%);
   content: "";
@@ -54,22 +53,31 @@
   width: 34px;
   height: 74px;
   cursor: pointer;
+  @include r($xl) {
+    left: 15px;
+    z-index: 1;
+  }
 
 }
 .slick-next {
   font-size: 0;
   position: absolute;
+  display: block;
   border: none;
-  padding: 0;
-  right: -52px;
+  right: -70px;
   top: 50%;
   transform: translateY(-50%);
   content: "";
   background-image: url("../images/icons/right-arrow.svg");
+  background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: transparent;
-  width: 36px;
+  width: 37px;
   height: 74px;
+  z-index: 1;
   cursor: pointer;
+  @include r($xl) {
+    right: 15px;
+  }
+
 }

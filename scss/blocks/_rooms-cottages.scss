@@ -21,14 +21,37 @@
   border-radius: 15px;
   background-color: $wh;
 
+  @include r($xl) {
+    margin: 0 auto 40px;
+
+  }
+
+  @include r($lg) {
+    max-width: 700px;
+  }
+
+  @include r($md){
+    flex-direction: column;
+    width: fit-content;
+  }
+
   &__content {
     padding: 25px 20px 20px 50px;
     width: 100%;
+    @include r($lg){
+      padding: 10px 15px 15px 25px;
+    }
+    @include r($md){
+      padding: 20px;
+    }
   }
 
   &__img {
     object-fit: cover;
-    max-width: 415px;
+    height: 100%;
+    @include r($md){
+      width: 100%;
+    }
 
 
   }
@@ -64,6 +87,11 @@
     margin-bottom: 30px;
     font-weight: 400;
     font-size: 26px;
+
+    @include r($lg){
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
 
   &__items {
@@ -83,7 +111,7 @@
     list-style: initial;
 
     @include r($lg) {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   }
 
@@ -101,12 +129,15 @@
     font-size: 24px;
 
     @include r($xl) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
   &__item:not(:last-child) {
     margin-bottom: 10px;
+    @include r($lg){
+      margin-bottom: 5px;
+    }
   }
 
   &__button {
@@ -118,6 +149,14 @@
     text-align: center;
     background-color: $accent;
     transition: box-shadow 0.3s, color 0.3s;
+    @include r($lg) {
+      padding: 6px;
+      font-size: 20px;
+      width: 240px;
+    }
+    @include r($md){
+      margin: 0 auto;
+    }
 
     &:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
@@ -139,6 +178,9 @@
 
 .card-revert {
   flex-direction: row-reverse;
+  @include r($md){
+   flex-direction: column;
+  }
 }
 
 .cottages {
