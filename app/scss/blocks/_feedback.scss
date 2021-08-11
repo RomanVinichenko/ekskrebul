@@ -3,6 +3,11 @@
   z-index: 5;
   padding: 180px 0 250px;
 
+  @include r($xl){
+    padding: 50px 0 30px;
+
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -17,11 +22,14 @@
   }
 
   &__img {
+
+    @include r($xl){
+      max-height: 250px;
+    }
+
     @include r($md) {
-      width: 300px;
-      height: 350px;
       border-radius: 20px;
-      object-fit: cover;
+      margin-bottom: 10px;
     }
   }
 
@@ -34,14 +42,17 @@
     overflow: hidden;
     border-radius: 20px;
     background-color: $accent;
-
     &:not(:last-child) {
       margin-bottom: 122px;
     }
-
+    @include r($xl){
+      max-width: 800px;
+      width: 100%;
+    }
     @include r($md) {
       flex-direction: column;
       padding: 20px 0;
+      width: fit-content;
     }
   }
 
@@ -52,6 +63,8 @@
     @include r($md) {
       max-width: 500px;
       text-align: center;
+      padding: 0 20px;
+
     }
   }
 
@@ -61,7 +74,8 @@
     color: $wh;
 
     @include r($xl) {
-      font-size: 32px;
+      font-size: 26px;
+      margin-bottom: 20px;
     }
   }
 
@@ -71,12 +85,12 @@
     font-size: 26px;
     color: $wh;
 
-    @include r($md) {
-      text-align: left;
+    @include r($xl) {
+      font-size: 20px;
     }
 
-    @include r($xl) {
-      font-size: 22px;
+    @include r($md) {
+      text-align: left;
     }
   }
 }

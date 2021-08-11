@@ -20,6 +20,13 @@
     z-index: 5;
     display: flex;
     justify-content: space-between;
+    @include r($lg){
+      justify-content: space-evenly;
+    }
+    @include r($sm){
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__title {
@@ -55,7 +62,7 @@
     }
 
     @include r($xl) {
-      padding-left: 70px;
+      padding-left: 64px;
       font-size: 16px;
     }
   }
@@ -79,7 +86,7 @@
     }
 
     @include r($xl) {
-      padding-right: 70px;
+      padding-right: 64px;
       font-size: 16px;
     }
   }
@@ -141,26 +148,50 @@
 
   &__item-left:not(:last-child) {
     margin-bottom: 85px;
+    @include r($lg) {
+      margin-bottom: 55px;
+    }
   }
 
   &__item-right:not(:last-child) {
     margin-bottom: 85px;
+    @include r($lg) {
+      margin-bottom: 55px;
+    }
   }
 
   &__img {
     margin: 0 25px;
 
-    @include r($xl) {
+    @include r($lg) {
       display: none;
     }
   }
 
   &__list-left {
     margin-left: auto;
+    @include r($lg){
+      margin: 0 5px 0 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    @include r($sm){
+      margin: 0 auto 50px 0;
+    }
   }
 
   &__list-right {
     margin-right: auto;
+    @include r($lg){
+      margin: 0 0 0 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    @include r($sm){
+      margin: 0 0 50px auto;
+    }
   }
 
   @include r($xl) {

@@ -28,7 +28,7 @@ $(function () {
   $('.menu a, .footer__logo, .footer__list a').on('click', function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
-      top = $(id).offset().top;
+      top = $(id).offset().top - $('.header').outerHeight();
     $('body,html').animate(
       {
         scrollTop: top,
