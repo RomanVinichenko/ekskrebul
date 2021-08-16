@@ -19,7 +19,7 @@
           </button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#present">Забронировать</a>
+              <a class="menu__link" href="#book">Забронировать</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">О Нас</a>
@@ -47,7 +47,7 @@
               <p class="top__pretitile">База отдыха на Aзовском море!</p>
               <h1 class="top__title">Ekskrebul</h1>
               <p class="top__subtitle">
-                Семейный отдых в пансионате на берегу Азовского моря <span id="present"></span>, аренда номеров и домиков в
+                Семейный отдых в пансионате на берегу Азовского моря, аренда номеров и домиков в
                 пансионате с 3х разовым питанием.
               </p>
             </div>
@@ -65,11 +65,12 @@
           </div>
         </div>
       </section>
-      <section class="present" >
+      <section class="present" id="book">
         <div class="container">
-          <div class="book">
+          <div class="book" >
             <div class="book__item"  >
               <p class="book__title">Гости</p>
+              <div class="book__select">
               <select class="book__person">
                 <option value="2 человека">2 человека</option>
                 <option value="3 человека" selected>3 человека</option>
@@ -81,6 +82,7 @@
                 <option value="9 человек">9 человек</option>
                 <option value="10 человек">10 человек</option>
               </select>
+              </div>
             </div>
             <div class="book__item book__item--calendar">
               <p class="book__title">Дата заезда</p>
@@ -132,9 +134,9 @@
           </div>
         </div>
       </section>
-      <section class="rooms" id="rooms">
+      <section class="rooms" >
         <div class="container">
-          <h2 class="rooms__title title">Наши номера</h2>
+          <h2 class="rooms__title title" id="rooms">Наши номера</h2>
           <article class="card">
             <div class="card__img-inner">
             <img class="card__img" src="images/one-room.jpg" alt="Фото номера" />
@@ -337,14 +339,15 @@
                   Отличный отдых мне все понравилось, Получили удовольствие от отдыха всей семьей!
                   Питание просто супер спасибо Лёхе.
                 </p>
+                <button class="feedback__button">Добавить отзыв</button>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="address" id="address">
+      <section class="address" >
         <div class="container">
-          <h2 class="address__title title">Как до нас добраться</h2>
+          <h2 class="address__title title" id="address">Как до нас добраться</h2>
           <div class="address__content">
             <div class="address__descr">
               <p class="address__text">
@@ -409,7 +412,7 @@
               <a class="footer__link" href="#gallery">Галерея</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#present">Забронировать</a>
+              <a class="footer__link" href="#book">Забронировать</a>
             </li>
           </ul>
           <div class="footer__descr">

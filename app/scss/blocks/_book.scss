@@ -7,44 +7,59 @@
   box-shadow: 1px 11px 15px rgba(0, 0, 0, 0.3);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  margin: 0 auto 5px;
   background: linear-gradient(180deg, #a3e4ff 0%, #f0ffff 100%);
-  @include r($lg) {
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px 30px;
-    max-width: 700px;
-    margin: 0 auto 50px;
 
-  }
-  @include r($md) {
-    flex-direction: column;
-    max-width: 500px;
-    width: 100%;
-    padding: 20px 10px;
-  }
 
   &__person {
+    padding-right: 25px;
+    appearance: none;
     border: none;
     font-weight: 400;
     font-size: 20px;
     background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+
     @include r($xl) {
       font-size: 18px;
     }
+
     @include r($md) {
       font-size: 16px;
     }
   }
 
+  &__select {
+    position: relative;
+    width: fit-content;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: 9px;
+      width: 12px;
+      height: 7px;
+      background-image: url("../images/icons/select-arrow.svg");
+      pointer-events: none;
+    }
+  }
+
   &__date {
+    max-width: 161px;
     border: none;
     font-weight: 400;
     font-size: 20px;
     background-color: transparent;
-    max-width: 161px;
+    position: relative;
+
     @include r($xl) {
       font-size: 18px;
     }
+
     @include r($md) {
       font-size: 16px;
     }
@@ -52,15 +67,8 @@
 
   &__item {
     position: relative;
-    padding-left: 50px;
     margin: 0 10px;
-    @include r($lg){
-      margin: 22px 10px;
-    }
-    @include r($md){
-      max-width: 230px;
-      width: 100%;
-    }
+    padding-left: 50px;
 
     &::before {
       content: "";
@@ -70,6 +78,15 @@
       width: 37px;
       height: 35px;
       background-image: url("../images/icons/user.svg");
+    }
+
+    @include r($lg) {
+      margin: 22px 10px;
+    }
+
+    @include r($md) {
+      width: 100%;
+      max-width: 230px;
     }
   }
 
@@ -83,10 +100,12 @@
     margin-bottom: 15px;
     padding-left: 4px;
     font-size: 26px;
+
     @include r($xl) {
-      font-size: 20px;
       margin-bottom: 10px;
+      font-size: 20px;
     }
+
     @include r($md) {
       font-size: 18px;
     }
@@ -102,19 +121,55 @@
     background-color: $accent;
     transition: box-shadow 0.2s;
     cursor: pointer;
-    @include r($xl) {
-      width: 220px;
-      font-size: 20px;
-    }
 
     &:hover {
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
 
+    @include r($xl) {
+      width: 220px;
+      font-size: 20px;
+    }
+
     @extend %lato-400;
+  }
+
+  @include r($lg) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto 25px;
+    padding: 20px 30px;
+    max-width: 700px;
+  }
+
+  @include r($md) {
+    flex-direction: column;
+    padding: 20px 10px;
+    width: 100%;
+    max-width: 500px;
   }
 }
 
-input[type=date]::-webkit-calendar-picker-indicator {
-  margin-left: 0;
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+input[type="date"]::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  width: 12px;
+  height: 7px;
+  cursor: pointer;
+  background-image: url("../images/icons/select-arrow.svg");
 }

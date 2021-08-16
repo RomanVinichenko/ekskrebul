@@ -5,6 +5,9 @@
   top: 0;
   z-index: 10;
   padding-top: 30px;
+  @include r($lg) {
+    padding-top: 15px;
+  }
 
   .menu {
     display: flex;
@@ -12,46 +15,81 @@
     justify-content: space-between;
 
     .logo {
-      @include r($sm) {
+      @include r($lg) {
         max-width: 200px;
       }
     }
+
     &__btn {
       display: none;
-      @include r($lg){
-          z-index: 2;
-          display: block;
-          padding: 0;
-          border: none;
-          background-color: transparent;
+
+      @include r($lg) {
+        z-index: 2;
+        display: block;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
       }
-      @include r($md){
+
+      @include r($md) {
         padding: 0 10px 0 0;
       }
     }
 
     &__list {
       display: flex;
-      @include r($lg){
-        display: none;
+
+      @include r($lg) {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        display: block;
+        align-items: center;
+        padding: 75px 0 15px;
+        text-align: center;
+        background-color: rgba($wh, 0.9);
+        transform: translateY(-200%);
+        transition: all 0.5s;
+        z-index: -1;
+        border-bottom: 1px solid #ccc;
       }
     }
+
+    &__list--active {
+      transform: translateY(0);
+
+    }
+
     &__item {
       font-size: 20px;
       color: $dark-gray;
-      @include r($xl){
+
+      @include r($xl) {
         font-size: 16px;
       }
+      @include r($xl) {
+        font-size: 18px;
+      }
+
+
+
     }
 
     &__item:not(:last-child) {
       margin-right: 20px;
+      @include r($lg) {
+        margin: 0;
+        margin-bottom: 15px;
+      }
     }
 
     &__button {
       color: $wh;
       background-color: $accent;
-      @include r($md){
+
+      @include r($md) {
         display: none;
       }
     }

@@ -107,6 +107,9 @@
   }
 
   @include r($xl) {
-    padding: 130px 0 10px;
+    padding: 105px 0 10px;
+  }
+  @include r($lg) {
+    padding: 85px 0 50px;
   }
 }
