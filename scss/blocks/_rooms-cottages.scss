@@ -1,14 +1,31 @@
 .rooms {
-  padding: 160px 0 10px;
+  padding: 110px 0 10px;
   background-image: url("../images/bg.png");
   background-size: cover;
+  @include r($xl) {
+    padding: 60px 0 10px;
+  }
+  @include r($lg) {
+    padding: 85px 0 10px;
+  }
+  @include r($md) {
+    background-image: none;
+    background-color: #cbebf8;
+    padding: 30px 0 10px;
+  }
 
   &__title::after {
     right: 26%;
-    top: -69px;
+    top: -10px;
     width: 143px;
     height: 123px;
     background-image: url("../images/icons/crab.svg");
+  }
+  &__title {
+    padding-top: 45px;
+    @include r($xl) {
+      padding-top: 60px;
+    }
   }
 }
 
@@ -21,40 +38,28 @@
   border-radius: 15px;
   background-color: $wh;
 
-  @include r($xl) {
-    margin: 0 auto 40px;
-
-  }
-
-  @include r($lg) {
-    max-width: 700px;
-  }
-
-  @include r($md){
-    flex-direction: column;
-    width: fit-content;
-  }
-
   &__content {
     padding: 25px 20px 20px 50px;
     width: 100%;
-    @include r($lg){
+
+    @include r($lg) {
       padding: 10px 15px 15px 25px;
     }
-    @include r($md){
+
+    @include r($md) {
       padding: 20px;
     }
   }
 
   &__img {
-    object-fit: cover;
     height: 100%;
-    @include r($md){
+    object-fit: cover;
+
+    @include r($md) {
       width: 100%;
     }
-
-
   }
+
   &__img-inner {
     position: relative;
     display: block;
@@ -63,21 +68,22 @@
     &::after {
       content: "Больше фото";
       position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 24px;
       opacity: 0;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
       width: 100%;
       height: 100%;
+      font-size: 24px;
       background-color: rgba(255, 255, 255, 0.55);
       transition: opacity 0.2s;
       cursor: pointer;
     }
+
     &:hover::after {
       opacity: 1;
     }
@@ -88,9 +94,9 @@
     font-weight: 400;
     font-size: 26px;
 
-    @include r($lg){
-      font-size: 20px;
+    @include r($lg) {
       margin-bottom: 15px;
+      font-size: 20px;
     }
   }
 
@@ -135,7 +141,8 @@
 
   &__item:not(:last-child) {
     margin-bottom: 10px;
-    @include r($lg){
+
+    @include r($lg) {
       margin-bottom: 5px;
     }
   }
@@ -149,18 +156,20 @@
     text-align: center;
     background-color: $accent;
     transition: box-shadow 0.3s, color 0.3s;
-    @include r($lg) {
-      padding: 6px;
-      font-size: 20px;
-      width: 240px;
-    }
-    @include r($md){
-      margin: 0 auto;
-    }
 
     &:hover {
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       color: $wh;
+    }
+
+    @include r($lg) {
+      padding: 6px;
+      width: 240px;
+      font-size: 20px;
+    }
+
+    @include r($md) {
+      margin: 0 auto;
     }
   }
 
@@ -174,21 +183,41 @@
   &:last-child {
     margin: 0 auto 10px;
   }
+
+  @include r($xl) {
+    margin: 0 auto 40px;
+  }
+
+  @include r($lg) {
+    max-width: 700px;
+  }
+
+  @include r($md) {
+    flex-direction: column;
+    width: fit-content;
+  }
 }
 
 .card-revert {
   flex-direction: row-reverse;
-  @include r($md){
-   flex-direction: column;
+
+  @include r($md) {
+    flex-direction: column;
   }
 }
 
 .cottages {
   padding: 100px 0 10px;
   background-color: #cbebf8;
+  @include r($xl) {
+    padding: 30px 0 10px;
+  }
 
   &__title {
     margin-bottom: 100px;
+    @include r($xl) {
+      margin-bottom: 50px;
+    }
   }
 
   &__title::after {

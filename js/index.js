@@ -36,4 +36,12 @@ $(function () {
       1200,
     );
   });
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu__link, .logo').on('click', function () {
+    $('.menu__list--active').removeClass('menu__list--active');
+  });
 });

@@ -1,7 +1,7 @@
 .benefits {
   position: relative;
   z-index: 1;
-  padding: 160px 0 10px;
+  padding: 165px 0 10px;
 
   &::before {
     content: "";
@@ -20,10 +20,12 @@
     z-index: 5;
     display: flex;
     justify-content: space-between;
-    @include r($lg){
+
+    @include r($lg) {
       justify-content: space-evenly;
     }
-    @include r($sm){
+
+    @include r($sm) {
       flex-direction: column;
       align-items: center;
     }
@@ -118,7 +120,12 @@
   }
 
   .benefits__item-right--cake {
+    padding: 0 0 0 64px;
+    text-align: left;
+
     &::before {
+      left: 0;
+      top: 0;
       width: 52px;
       height: 54px;
       background-image: url("../images/icons/cake.svg");
@@ -126,28 +133,39 @@
   }
 
   .benefits__item-right--sun {
-    margin: 0 0 85px auto;
-    max-width: 265px;
+    padding: 0 0 0 64px;
+    text-align: left;
 
     &::before {
+      left: 0;
+      top: 0;
       background-image: url("../images/icons/sun.svg");
     }
   }
 
   .benefits__item-right--insects {
+    padding: 0 0 0 64px;
+    text-align: left;
     &::before {
+      left: 0;
+      top: 0;
       background-image: url("../images/icons/insects.svg");
     }
   }
 
   .benefits__item-right--jellyfish {
+    padding: 0 0 0 64px;
+    text-align: left;
     &::before {
+      left: 0;
+      top: 0;
       background-image: url("../images/icons/jellyfish.svg");
     }
   }
 
   &__item-left:not(:last-child) {
     margin-bottom: 85px;
+
     @include r($lg) {
       margin-bottom: 55px;
     }
@@ -155,6 +173,7 @@
 
   &__item-right:not(:last-child) {
     margin-bottom: 85px;
+
     @include r($lg) {
       margin-bottom: 55px;
     }
@@ -170,31 +189,40 @@
 
   &__list-left {
     margin-left: auto;
-    @include r($lg){
-      margin: 0 5px 0 0;
+
+    @include r($lg) {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      margin: 0 5px 0 0;
     }
-    @include r($sm){
-      margin: 0 auto 50px 0;
+
+    @include r($sm) {
+      margin-bottom: 50px;
     }
   }
 
   &__list-right {
     margin-right: auto;
-    @include r($lg){
-      margin: 0 0 0 5px;
+
+    @include r($lg) {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      margin: 0 0 0 5px;
     }
-    @include r($sm){
-      margin: 0 0 50px auto;
+
+    @include r($sm) {
+      margin: 0;
     }
   }
 
   @include r($xl) {
-    padding: 130px 0 10px;
+    padding: 120px 0 10px;
+  }
+
+  @include r($md) {
+    padding: 95px 0 80px;
+
   }
 }
