@@ -84,8 +84,8 @@
   }
 
   @include r($md) {
+    padding: 30px 0 10px;
     background-image: none;
     background-color: #cbebf8;
-    padding: 30px 0 10px;
   }
 }

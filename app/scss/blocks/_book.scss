@@ -2,14 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: 0 auto 5px;
   padding: 48px 55px;
   border-radius: 20px;
   box-shadow: 1px 11px 15px rgba(0, 0, 0, 0.3);
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  margin: 0 auto 5px;
   background: linear-gradient(180deg, #a3e4ff 0%, #f0ffff 100%);
-
 
   &__person {
     padding-right: 25px;
@@ -49,12 +48,12 @@
   }
 
   &__date {
+    position: relative;
     max-width: 161px;
     border: none;
     font-weight: 400;
     font-size: 20px;
     background-color: transparent;
-    position: relative;
 
     @include r($xl) {
       font-size: 18px;
@@ -151,16 +150,16 @@
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  background: transparent;
-  bottom: 0;
-  color: transparent;
-  cursor: pointer;
-  height: auto;
-  left: 0;
   position: absolute;
+  left: 0;
   right: 0;
   top: 0;
+  bottom: 0;
   width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
 }
 
 input[type="date"]::before {
@@ -170,6 +169,6 @@ input[type="date"]::before {
   top: 9px;
   width: 12px;
   height: 7px;
-  cursor: pointer;
   background-image: url("../images/icons/select-arrow.svg");
+  cursor: pointer;
 }

@@ -5,9 +5,6 @@
   top: 0;
   z-index: 10;
   padding-top: 30px;
-  @include r($lg) {
-    padding-top: 15px;
-  }
 
   .menu {
     display: flex;
@@ -45,21 +42,20 @@
         left: 0;
         right: 0;
         top: 0;
+        z-index: -1;
         display: block;
         align-items: center;
-        padding: 75px 0 15px;
+        padding: 90px 0 15px;
+        border-bottom: 1px solid #ccc;
         text-align: center;
         background-color: rgba($wh, 0.9);
         transform: translateY(-200%);
         transition: all 0.5s;
-        z-index: -1;
-        border-bottom: 1px solid #ccc;
       }
     }
 
     &__list--active {
       transform: translateY(0);
-
     }
 
     &__item {
@@ -69,16 +65,15 @@
       @include r($xl) {
         font-size: 16px;
       }
+
       @include r($xl) {
         font-size: 18px;
       }
-
-
-
     }
 
     &__item:not(:last-child) {
       margin-right: 20px;
+
       @include r($lg) {
         margin: 0;
         margin-bottom: 15px;
@@ -92,6 +87,23 @@
       @include r($md) {
         display: none;
       }
+    }
+  }
+
+  @include r($lg) {
+    padding-top: 15px;
+  }
+}
+
+.header__about {
+  padding: 30px 0;
+  background-color: #f0ffff;
+
+  .menu__list {
+    margin-left: 84px;
+
+    @include r($lg) {
+      margin-left: 0;
     }
   }
 }

@@ -2,9 +2,6 @@
   position: relative;
   z-index: 5;
   padding: 190px 0 250px;
-  @include r($xl) {
-    padding: 120px 0 30px;
-  }
 
   &::before {
     content: "";
@@ -79,11 +76,11 @@
   }
 
   &__text {
+    margin-bottom: 20px;
     width: 100%;
     max-width: 550px;
     font-size: 26px;
     color: $wh;
-    margin-bottom: 20px;
 
     @include r($xl) {
       font-size: 20px;
@@ -94,31 +91,35 @@
     }
   }
 
-
   &__button {
-    background: transparent;
+    position: relative;
+    padding-left: 60px;
     border: none;
     font-size: 26px;
     color: $wh;
-    padding-left: 60px;
+    background: transparent;
     cursor: pointer;
-    position: relative;
-    @include r($xl){
-      font-size: 20px;
 
-    }
-    
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       left: 0;
       top: -3px;
-      background-image: url("../images/icons/feedback-button.svg");
       width: 44px;
       height: 44px;
-      @include r($xl){
+      background-image: url("../images/icons/feedback-button.svg");
+
+      @include r($xl) {
         top: -6px;
       }
     }
+
+    @include r($xl) {
+      font-size: 20px;
+    }
+  }
+
+  @include r($xl) {
+    padding: 120px 0 30px;
   }
 }

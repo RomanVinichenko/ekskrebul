@@ -24,8 +24,38 @@ $(function () {
     dots: false,
     arrows: true,
   });
+  $('.gallery__slider').slick({
+    loop: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1322,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 950,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 
-  $('.menu a, .footer__logo, .footer__list a').on('click', function (event) {
+  $('.menu__item-link a, .logo, .footer__logo, .footer__item-link a').on('click', function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
       top = $(id).offset().top - $('.header').outerHeight();

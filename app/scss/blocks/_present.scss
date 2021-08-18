@@ -4,10 +4,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-
   &__title {
-    font-size: 70px;
     padding-top: 80px;
+    font-size: 70px;
 
     &::after {
       right: -3px;
@@ -18,9 +17,10 @@
     }
 
     @include r($xl) {
-      font-size: 48px;
       padding-top: 40px;
+      font-size: 48px;
     }
+
     @include r($lg) {
       padding-top: 25px;
     }
@@ -32,10 +32,11 @@
 
   &__slider {
     margin: 0 auto;
+    padding: 0 70px;
     width: 100%;
     max-width: 980px;
     text-align: center;
-    padding: 0 70px;
+
     @include r($lg) {
       padding: 0 30px;
     }
@@ -61,11 +62,11 @@
   background-repeat: no-repeat;
   background-color: transparent;
   transform: translateY(-50%);
+
   @include r($lg) {
     width: 17px;
     height: 46px;
     background-image: url("../images/icons/left-arrow-small.svg");
-
   }
 }
 

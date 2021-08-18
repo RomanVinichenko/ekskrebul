@@ -2,17 +2,6 @@
   padding: 110px 0 10px;
   background-image: url("../images/bg.png");
   background-size: cover;
-  @include r($xl) {
-    padding: 60px 0 10px;
-  }
-  @include r($lg) {
-    padding: 85px 0 10px;
-  }
-  @include r($md) {
-    background-image: none;
-    background-color: #cbebf8;
-    padding: 30px 0 10px;
-  }
 
   &__title::after {
     right: 26%;
@@ -21,11 +10,27 @@
     height: 123px;
     background-image: url("../images/icons/crab.svg");
   }
+
   &__title {
     padding-top: 45px;
+
     @include r($xl) {
       padding-top: 60px;
     }
+  }
+
+  @include r($xl) {
+    padding: 60px 0 10px;
+  }
+
+  @include r($lg) {
+    padding: 85px 0 10px;
+  }
+
+  @include r($md) {
+    padding: 30px 0 10px;
+    background-image: none;
+    background-color: #cbebf8;
   }
 }
 
@@ -209,12 +214,10 @@
 .cottages {
   padding: 100px 0 10px;
   background-color: #cbebf8;
-  @include r($xl) {
-    padding: 30px 0 10px;
-  }
 
   &__title {
     margin-bottom: 100px;
+
     @include r($xl) {
       margin-bottom: 50px;
     }
@@ -226,5 +229,9 @@
     width: 258px;
     height: 285px;
     background-image: url("../images/icons/lighthouse.svg");
+  }
+
+  @include r($xl) {
+    padding: 30px 0 10px;
   }
 }
