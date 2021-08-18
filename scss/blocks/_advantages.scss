@@ -4,15 +4,6 @@
   padding: 160px 0 10px;
   background-image: url("../images/bg.png");
   background-size: cover;
-  @include r($xl) {
-    padding: 140px 0 10px;
-
-  }
-  @include r($md) {
-    background-image: none;
-    background-color: #cbebf8;
-    padding: 30px 0 10px;
-  }
 
   &::before {
     content: "";
@@ -121,6 +112,16 @@
     width: 100%;
     max-width: 575px;
     line-height: 1.65;
+  }
+
+  @include r($xl) {
+    padding: 140px 0 10px;
+  }
+
+  @include r($md) {
+    padding: 30px 0 10px;
+    background-image: none;
+    background-color: #cbebf8;
   }
 }
 

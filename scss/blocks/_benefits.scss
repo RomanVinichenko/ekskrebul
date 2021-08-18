@@ -146,6 +146,7 @@
   .benefits__item-right--insects {
     padding: 0 0 0 64px;
     text-align: left;
+
     &::before {
       left: 0;
       top: 0;
@@ -156,6 +157,7 @@
   .benefits__item-right--jellyfish {
     padding: 0 0 0 64px;
     text-align: left;
+
     &::before {
       left: 0;
       top: 0;
@@ -223,6 +225,5 @@
 
   @include r($md) {
     padding: 95px 0 80px;
-
   }
 }

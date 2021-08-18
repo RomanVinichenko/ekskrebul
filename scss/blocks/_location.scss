@@ -1,0 +1,106 @@
+.location {
+  padding: 65px 0 60px;
+  font-family: "Montserrat", sans-serif;
+
+  &__descr {
+    margin-right: 10px;
+    width: 100%;
+    max-width: 615px;
+
+    @include r($xl) {
+      max-width: 500px;
+    }
+
+    @include r($lg) {
+      margin-right: 0;
+      margin-bottom: 15px;
+      max-width: 100%;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+
+    @include r($xl) {
+      margin-bottom: 20px;
+    }
+
+    @include r($lg) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+
+    @include r($xl) {
+      font-size: 38px;
+    }
+
+    @include r($lg) {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__beach {
+    display: flex;
+    align-items: center;
+
+    @include r($lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__beach-title {
+    display: inline-block;
+    margin-right: 100px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+
+    @include r($xl) {
+      font-size: 38px;
+    }
+
+    @include r($lg) {
+      margin-right: 0;
+      font-size: 28px;
+    }
+  }
+
+  &__beach-text {
+    display: inline-block;
+    width: 100%;
+    max-width: 440px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+
+    @include r($lg) {
+      max-width: 100%;
+    }
+  }
+
+  @include r($xl) {
+    padding: 30px 0;
+  }
+}

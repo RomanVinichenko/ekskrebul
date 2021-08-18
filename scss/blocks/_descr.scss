@@ -1,0 +1,67 @@
+.descr {
+  display: block;
+  padding: 170px 0 60px;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/descr-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 20px 42px 70px;
+    max-width: 695px;
+    color: $wh;
+    background-color: rgba(99, 167, 204, 0.69);
+
+    @include r($md) {
+      padding: 20px 20px 40px;
+    }
+  }
+
+  &__title {
+    margin: 0 auto 20px;
+    max-width: 550px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+
+    @include r($md) {
+      font-size: 22px;
+    }
+  }
+
+  &__text-2 {
+    margin-bottom: 25px;
+  }
+
+  &__text-1 {
+    @include r($sm) {
+      display: none;
+    }
+  }
+
+  &__text-3 {
+    @include r($md) {
+      display: none;
+    }
+  }
+
+  &__text-1,
+  &__text-2,
+  &__text-3 {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+
+    @include r($md) {
+      font-size: 16px;
+    }
+  }
+
+  @include r($md) {
+    padding: 170px 0 60px;
+  }
+}
