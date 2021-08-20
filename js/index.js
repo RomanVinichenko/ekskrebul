@@ -54,6 +54,19 @@ $(function () {
       },
     ],
   });
+  $('.number__slider-thumbs').slick({
+    asNavFor: '.number__slider-bigs',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    horizontalOverflow: true,
+  });
+  $('.number__slider-bigs').slick({
+    asNavFor: '.number__slider-thumbs',
+    dots: false,
+    arrows: false,
+  });
 
   $('.menu__item-link a, .logo, .footer__logo, .footer__item-link a').on('click', function (event) {
     event.preventDefault();
