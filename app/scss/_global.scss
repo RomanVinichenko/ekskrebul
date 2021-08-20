@@ -121,3 +121,26 @@ body {
     text-align: center;
   }
 }
+
+.book__button {
+  padding: 14px;
+  width: 262px;
+  border: none;
+  border-radius: 10px;
+  font-size: 26px;
+  color: $wh;
+  background-color: $accent;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.19), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  @include r($xl) {
+    width: 220px;
+    font-size: 20px;
+  }
+
+  @extend %lato-400;
+}
