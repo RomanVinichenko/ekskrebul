@@ -61,6 +61,20 @@ $(function () {
     dots: false,
     arrows: false,
     horizontalOverflow: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
   $('.number__slider-bigs').slick({
     asNavFor: '.number__slider-thumbs',
