@@ -1,142 +1,265 @@
 .number {
-  padding: 100px 0 70px;
+  padding: 135px 0 70px;
+  @include r($lg) {
+    padding: 135px 0 30px;
+  }
+
   &__title {
+    margin-bottom: 60px;
     font-family: "Pacifico", sans-serif;
     font-weight: 400;
     font-size: 58px;
-    line-height: 80px;
-    color: $accent;
     text-align: center;
-    margin-bottom: 60px;
+    color: $accent;
+    @include r($xl) {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    @include r($md) {
+      font-size: 28px;
+    }
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    @include r($xl) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
-  &__slider {
-    max-width: 750px;
-    width: 100%;
 
+  &__slider {
+    width: 100%;
+    max-width: 750px;
   }
 
   &__slider-bigs {
     margin-bottom: 15px;
-  }
-  &__slider-thumb {
-    &:not(:last-child) {
-      margin-right: 15px;
+    overflow: hidden;
+    max-width: 735px;
+    @include r($lg) {
+      padding: 0 15px;
     }
+  }
+  &__slider-thumbs{
+    overflow: hidden;
+    @include r($lg) {
+      padding-left: 15px;
+      overflow: hidden;
+    }
+  }
+  &__slider-thumb{
+    padding-right: 17px;
   }
   &__slider-thumb--img {
     width: 100%;
     height: 140px;
     object-fit: cover;
-    &:not(:last-child) {
-      margin-right: 15px;
+  }
+
+  &__slider-big--img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    @include r($xl) {
+      height: 400px;
+    }
+    @include r($md) {
+      height: 300px;
     }
   }
-  &__info {
-    max-width: 390px;
-    width: 100%;
-    margin-left: 25px;
-  }
-  &__point {
 
+  &__info {
+    margin-left: 25px;
+    width: 100%;
+    max-width: 390px;
+    @include r($xl) {
+      max-width: 750px;
+      margin-left: 0;
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+
+  &__point {
     &:not(:last-child) {
       margin-bottom: 25px;
+      @include r($xl) {
+        margin: 0 10px 15px 0;
+      }
     }
+    @include r($xl) {
+      text-align: left;
+    }
+
+
   }
+
   &__points {
     margin-bottom: 25px;
+    @include r($xl) {
+      display: flex;
+    }
+    @include r($md) {
+      flex-wrap: wrap;
+    }
   }
+
   &__point-descr {
     font-size: 22px;
+    @include r($lg) {
+      font-size: 18px;
+    }
   }
+
   &__point-span {
     font-size: 20px;
-    color: #888888;
+    color: #888;
+    @include r($lg) {
+      font-size: 16px;
+    }
   }
+
   &__button {
-    max-width: 390px;
-    width: 100%;
-    @extend %lato-600;
-    font-size: 28px;
-    padding: 16px;
     margin-bottom: 15px;
+    padding: 16px;
+    width: 100%;
+    max-width: 390px;
+    font-size: 28px;
+    @include r($xl) {
+      margin-bottom: 10px;
+    }
+    @include r($lg) {
+      flex-wrap: wrap;
+      max-width: 300px;
+      font-size: 20px;
+    }
+
+    @extend %lato-600;
   }
+
   &__prices {
     margin: 0 auto;
-    text-align: center;
     padding-top: 25px;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #000;
+    text-align: center;
+    @include r($xl) {
+      border: none;
+      display: flex;
+    }
+    @include r($md) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
+
   &__price {
-    font-size: 26px;
+    font-size: 22px;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
+    @include r($xl) {
+      margin-right: 10px;
+    }
+    @include r($lg) {
+      font-size: 18px;
+    }
   }
-  &__service-title{
-    font-size: 26px;
-    font-weight: 400;
+
+  &__service-title {
     margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 26px;
+    @include r($lg) {
+      font-size: 20px;
+    }
   }
+
   &__service-text {
-    font-size: 24px;
     margin-bottom: 60px;
+    font-size: 24px;
+    @include r($lg) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
   }
+
   &__items {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
+
   &__item {
-    padding: 50px 0 50px 125px;
     position: relative;
+    padding: 50px 0 50px 125px;
     width: 33.3%;
+    @include r($lg) {
+      padding: 50px 0 50px 75px;
+    }
+    @include r($md) {
+      width: 50%;
+    }
+    @include r($sm) {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+      padding: 35px 0 35px 75px;
+
+    }
     &::before {
       content: "";
       position: absolute;
       left: 0;
       top: 50%;
-      transform: translateY(-50%);
       width: 75px;
       height: 78px;
-      background-repeat: no-repeat;
-      background-size: cover;
       background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      @include r($lg) {
+        width: 55px;
+        height: 58px;
+      }
     }
   }
 
-
-  &__item--conditioner{
+  &__item--conditioner {
     &::before {
       background-image: url("../images/icons/conditioner.svg");
     }
   }
-  &__item--water{
+
+  &__item--water {
     &::before {
       background-image: url("../images/icons/water.svg");
     }
   }
-  &__item--badroom{
+
+  &__item--badroom {
     &::before {
       background-image: url("../images/icons/badroom.svg");
     }
   }
-  &__item--tv{
+
+  &__item--tv {
     &::before {
       background-image: url("../images/icons/tv.svg");
     }
   }
-  &__item--fridge{
+
+  &__item--fridge {
     &::before {
       background-image: url("../images/icons/fridge.svg");
     }
   }
-  &__item--balcony{
+
+  &__item--balcony {
     &::before {
       background-image: url("../images/icons/balcony.svg");
     }
