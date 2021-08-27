@@ -1,0 +1,151 @@
+.booking {
+  height: 100vh;
+  background-color: rgba(99, 167, 204, 0.65);
+  padding: 72px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+
+  &__modal {
+    padding: 60px 60px 80px 60px;
+    height: 668px;
+    width: 100%;
+    background: linear-gradient(180deg, #A3E4FF 0%, #F0FFFF 100%);
+    box-shadow: 1px 11px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+
+  &__title {
+    font-family: "Pacifico", sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 55px;
+    color: #1A7BB0;
+    margin-bottom: 20px;
+  }
+
+  &__top,
+  &__middle,
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__top {
+    margin-bottom: 50px;
+  }
+  &__middle {
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    border: none;
+    border-radius: 10px;
+    padding: 16px 20px 18px;
+    color: #BDBDBD;
+    font-size: 22px;
+    width: 330px;
+    line-height: 26px;
+    background-color: #fff;
+  }
+
+  &__input--middle {
+    width: 250px;
+  }
+
+  &__input--black {
+    width: 250px;
+    color: #000;
+  }
+
+  &__input--bottom {
+    width: 340px;
+    color: #000;
+  }
+
+  &__label-title {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+
+  &__date {
+    position: relative;
+    color: #BDBDBD;
+    padding: 16px 20px 18px 70px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/icons/calendar.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      top: 14px;
+      left: 20px;
+      width: 32px;
+      height: 30px;
+    }
+  }
+
+  &__label--select{
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 22px;
+      top: 64px;
+      width: 12px;
+      height: 7px;
+      background-image: url("../images/icons/select-arrow.svg");
+      pointer-events: none;
+    }
+  }
+
+  &__input--select {
+    appearance: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__button {
+    background-color: #63A7CC;
+    border-radius: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    border: none;
+    width: 340px;
+    height: 60px;
+    align-self: flex-end;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    color: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  input[type="date"]::before {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 7px;
+    background-image: url("../images/icons/select-arrow.svg");
+    cursor: pointer;
+  }
+}
+

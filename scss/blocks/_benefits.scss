@@ -120,48 +120,74 @@
   }
 
   .benefits__item-right--cake {
-    padding: 0 0 0 64px;
-    text-align: left;
+    padding: 0 64px 0 0;
+    @include r($sm){
+      padding: 0 0 0 64px;
+      text-align: left;
+    }
 
     &::before {
-      left: 0;
+      right: 0;
       top: 0;
       width: 52px;
       height: 54px;
       background-image: url("../images/icons/cake.svg");
+      @include r($sm){
+        left: 0;
+      }
     }
   }
 
   .benefits__item-right--sun {
-    padding: 0 0 0 64px;
-    text-align: left;
+    padding: 0 64px 0 0;
+    @include r($sm){
+      padding: 0 0 0 64px;
+      text-align: left;
+
+    }
 
     &::before {
-      left: 0;
+      right: 0;
       top: 0;
       background-image: url("../images/icons/sun.svg");
+      @include r($sm){
+        left: 0;
+      }
     }
   }
 
   .benefits__item-right--insects {
-    padding: 0 0 0 64px;
-    text-align: left;
+    padding: 0 64px 0 0;
+    @include r($sm){
+      padding: 0 0 0 64px;
+      text-align: left;
+
+    }
 
     &::before {
-      left: 0;
+      right: 0;
       top: 0;
       background-image: url("../images/icons/insects.svg");
+      @include r($sm){
+        left: 0;
+      }
     }
   }
 
   .benefits__item-right--jellyfish {
-    padding: 0 0 0 64px;
-    text-align: left;
+    padding: 0 64px 0 0;
+    @include r($sm){
+      padding: 0 0 0 64px;
+      text-align: left;
+    }
 
     &::before {
-      left: 0;
+      right: 0;
       top: 0;
       background-image: url("../images/icons/jellyfish.svg");
+      @include r($sm){
+        left: 0;
+      }
     }
   }
 
