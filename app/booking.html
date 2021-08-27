@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ekskrebul</title>
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+<body>
+<section class="booking">
+  <div class="container">
+    <div class="booking__modal">
+      <form class="booking__form">
+        <h3 class="booking__title">Контактная информация</h3>
+        <div class="booking__top">
+          <label class="booking__label" for="name">
+            <p class="booking__label-title">ФИО *</p>
+            <input class="booking__input" type="text" placeholder="Фамилия, имя" id="name">
+          </label>
+          <label class="booking__label" for="tel">
+            <p class="booking__label-title">Телефон *</p>
+            <input class="booking__input" type="tel" placeholder="+38" id="tel">
+          </label>
+          <label class="booking__label" for="mail">
+            <p class="booking__label-title">Почта *</p>
+            <input class="booking__input" type="email" placeholder="Email" id="mail">
+          </label>
+        </div>
+        <h3 class="booking__title">Информация по бронированию</h3>
+        <div class="booking__middle">
+          <label class="booking__label" for="date-1">
+            <p class="booking__label-title">Дата заезда</p>
+            <input class="booking__input booking__input--middle booking__date" value="2021-01-01" type="date"
+                   id="date-1" />
+          </label>
+          <label class="booking__label" for="date-2">
+            <p class="booking__label-title">Дата выезда</p>
+            <input class="booking__input booking__input--middle booking__date" value="2021-01-01" type="date"
+                   id="date-2" />
+          </label>
+          <label class="booking__label booking__label--select" for="adult">
+            <p class="booking__label-title">Количество взрослых</p>
+            <select class="booking__input booking__input--black booking__input--select" id="adult">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </label>
+          <label class="booking__label booking__label--select" for="child">
+            <p class="booking__label-title">Количество детей</p>
+            <select class="booking__input booking__input--black booking__input--select" id="child">
+              <option value="1">1</option>
+              <option value="2" selected>2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+          </label>
+        </div>
+        <div class="booking__bottom">
+          <label class="booking__label booking__label--select" for="live">
+            <p class="booking__label-title">Тип жилья</p>
+            <select class="booking__input booking__input--bottom booking__input--select" id="live">
+              <option value="Однокомнатный люкс">Однокомнатный люкс</option>
+              <option value="Двухкомнатный люкс" selected>Двухкомнатный люкс</option>
+              <option value="Трехкомнатный люкс">Трехкомнатный люкс</option>
+              <option value="Деревянный коттедж">Деревянный коттедж</option>
+              <option value="Каменный коттедж">Каменный коттедж</option>
+            </select>
+          </label>
+          <label class="booking__label booking__label--select" for="eat">
+            <p class="booking__label-title">Питание</p>
+            <select class="booking__input booking__input--bottom booking__input--select" id="eat">
+              <option value="Без питания">Без питания</option>
+              <option value="С питанием" selected>С питанием</option>
+            </select>
+          </label>
+          <button class="booking__button" type="submit">Забронировать</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</body>
+</html>
