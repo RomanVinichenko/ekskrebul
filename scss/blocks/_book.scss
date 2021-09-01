@@ -10,106 +10,9 @@
   font-weight: 300;
   background: linear-gradient(180deg, #a3e4ff 0%, #f0ffff 100%);
 
-  &__person {
-    padding-right: 25px;
-    appearance: none;
-    border: none;
-    font-weight: 400;
-    font-size: 20px;
-    background-color: transparent;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    @include r($xl) {
-      font-size: 18px;
-    }
-
-    @include r($md) {
-      font-size: 16px;
-    }
+  &__button {
+    margin-left: auto;
   }
-
-  &__select {
-    position: relative;
-    width: fit-content;
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: 5px;
-      top: 9px;
-      width: 12px;
-      height: 7px;
-      background-image: url("../images/icons/select-arrow.svg");
-      pointer-events: none;
-    }
-  }
-
-  &__date {
-    position: relative;
-    max-width: 161px;
-    border: none;
-    font-weight: 400;
-    font-size: 20px;
-    background-color: transparent;
-
-    @include r($xl) {
-      font-size: 18px;
-    }
-
-    @include r($md) {
-      font-size: 16px;
-    }
-  }
-
-  &__item {
-    position: relative;
-    margin: 0 10px;
-    padding-left: 50px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 37px;
-      height: 35px;
-      background-image: url("../images/icons/user.svg");
-    }
-
-    @include r($lg) {
-      margin: 22px 10px;
-    }
-
-    @include r($md) {
-      width: 100%;
-      max-width: 230px;
-    }
-  }
-
-  .book__item--calendar {
-    &::before {
-      background-image: url("../images/icons/calendar.svg");
-    }
-  }
-
-  &__title {
-    margin-bottom: 15px;
-    padding-left: 4px;
-    font-size: 26px;
-
-    @include r($xl) {
-      margin-bottom: 10px;
-      font-size: 20px;
-    }
-
-    @include r($md) {
-      font-size: 18px;
-    }
-  }
-
   @include r($lg) {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -124,28 +27,4 @@
     width: 100%;
     max-width: 500px;
   }
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: auto;
-  height: auto;
-  color: transparent;
-  background: transparent;
-  cursor: pointer;
-}
-
-input[type="date"]::before {
-  content: "";
-  position: absolute;
-  right: 5px;
-  top: 9px;
-  width: 12px;
-  height: 7px;
-  background-image: url("../images/icons/select-arrow.svg");
-  cursor: pointer;
 }

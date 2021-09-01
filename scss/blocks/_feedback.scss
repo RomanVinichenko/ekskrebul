@@ -16,110 +16,12 @@
     background-repeat: no-repeat;
   }
 
-  &__img {
-    @include r($xl) {
-      max-height: 250px;
-    }
-
-    @include r($md) {
-      margin-bottom: 10px;
-      border-radius: 20px;
-    }
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1085px;
-    overflow: hidden;
-    border-radius: 20px;
-    background-color: $accent;
-
-    &:not(:last-child) {
-      margin-bottom: 122px;
-    }
-
-    @include r($xl) {
-      width: 100%;
-      max-width: 800px;
-    }
-
-    @include r($md) {
-      flex-direction: column;
-      padding: 40px 0;
-      width: fit-content;
-    }
-  }
-
-  &__content {
-    padding: 0 60px;
-    width: 100%;
-
-    @include r($md) {
-      padding: 0 20px;
-      max-width: 500px;
-      text-align: center;
-    }
-  }
-
-  &__name {
-    margin-bottom: 25px;
-    font-size: 39px;
-    color: $wh;
-
-    @include r($xl) {
-      margin-bottom: 20px;
-      font-size: 26px;
-    }
-  }
-
-  &__text {
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 550px;
-    font-size: 26px;
-    color: $wh;
-
-    @include r($xl) {
-      font-size: 20px;
-    }
-
-    @include r($md) {
-      text-align: left;
-    }
-  }
-
-  &__button {
-    position: relative;
-    padding-left: 60px;
-    border: none;
-    font-size: 26px;
-    color: $wh;
-    background: transparent;
-    cursor: pointer;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: -3px;
-      width: 44px;
-      height: 44px;
-      background-image: url("../images/icons/feedback-button.svg");
-
-      @include r($xl) {
-        top: -6px;
-      }
-    }
-
-    @include r($xl) {
-      font-size: 20px;
-    }
-  }
-
   @include r($xl) {
     padding: 120px 0 30px;
+  }
+  &__img{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

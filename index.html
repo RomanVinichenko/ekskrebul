@@ -34,7 +34,14 @@
               <a class="menu__link" href="#address">Контакты</a>
             </li>
           </ul>
-          <a class="menu__button feedback-button" href="#">Обратный Звонок</a>
+          <ul class="menu__phone">
+            <li class="menu__phone-link">
+              <a class="menu__phone-tel" href="tel:380509205341"> +38 (050) 920-53-41 </a>
+            </li>
+            <li class="menu__phone-link">
+              <a class="menu__phone-tel" href="tel:380504865757"> +38 (050) 486-57-57 </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -68,30 +75,6 @@
       <section class="present" id="book">
         <div class="container">
           <div class="book">
-            <div class="book__item">
-              <p class="book__title">Гости</p>
-              <div class="book__select">
-                <select class="book__person">
-                  <option value="2 человека">2 человека</option>
-                  <option value="3 человека" selected>3 человека</option>
-                  <option value="4 человека">4 человека</option>
-                  <option value="5 человек">5 человек</option>
-                  <option value="6 человек">6 человек</option>
-                  <option value="7 человек">7 человек</option>
-                  <option value="8 человек">8 человек</option>
-                  <option value="9 человек">9 человек</option>
-                  <option value="10 человек">10 человек</option>
-                </select>
-              </div>
-            </div>
-            <div class="book__item book__item--calendar">
-              <p class="book__title">Дата заезда</p>
-              <input class="book__date" value="2021-01-01" type="date" />
-            </div>
-            <div class="book__item book__item--calendar">
-              <p class="book__title">Дата выезда</p>
-              <input class="book__date" value="2021-01-01" type="date" />
-            </div>
             <button class="book__button" type="button">Забронировать</button>
           </div>
           <h2 class="present__title title" id="gallery">Посмотрите фото нашей базы</h2>
@@ -327,19 +310,9 @@
       <section class="feedback">
         <div class="container">
           <h2 class="feedback__title title">Отзывы</h2>
-          <ul class="feedback__items">
-            <li class="feedback__item">
-              <img class="feedback__img" src="images/guest1.jpg" alt="Фото гостя" />
-              <div class="feedback__content">
-                <p class="feedback__name">Александр А.</p>
-                <p class="feedback__text">
-                  Отличный отдых мне все понравилось, Получили удовольствие от отдыха всей семьей!
-                  Питание просто супер спасибо Лёхе.
-                </p>
-                <button class="feedback__button">Добавить отзыв</button>
-              </div>
-            </li>
-          </ul>
+          <picture class="feedback__picture">
+            <img class="feedback__img" src="images/feedback/1.jpg" alt="Отзыв">
+          </picture>
         </div>
       </section>
       <section class="address">
@@ -373,7 +346,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
-          <a class="footer__button feedback-button" href="#">Обратный Звонок</a>
+          <a class="footer__button feedback-button" href="#">Забронировать</a>
           <div class="footer__socials">
             <a
               class="footer__social"
